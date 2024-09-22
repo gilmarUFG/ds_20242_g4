@@ -2,7 +2,7 @@
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto de do Grupo 4, da Disciplina de Domínios de Software, no semestre 2024-2.
 
 ### Nome do Projeto:
-Informar o nome do projeto
+Registro de vacina
 
 ### Descrição:
 O projeto atuará no domínio de Saúde Pública, com foco na prevenção de doenças através da vacinação, uma das missões centrais do Sistema Único de Saúde (SUS) no Brasil. O objetivo principal é criar uma solução digital para gerenciar as informações de vacinação da população, oferecendo um meio mais acessível e eficiente para os cidadãos e integrando-se ao sistema de saúde nacional.
