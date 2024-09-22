@@ -19,7 +19,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
 |202201681|ALINE LIMA MARTINS COELHO|[aaaaline](https://github.com/aaaaline)|
-|202206141|ALINE NUNES DOS SANTOS|[<alinenunes21>](https://github.com/alinenunes21)|
+|202206141|ALINE NUNES DOS SANTOS|[alinenunes21](https://github.com/alinenunes21)|
 |202200031|RAQUEL DIAS DA SILVA|[RaquelDiasES](https://github.com/RaquelDiasES)|
 |202201714|STEPHANY DE OLIVEIRA SOUSA MILHOMEM|[StephanyMil](https://github.com/StephanyMil)|
 |202201715|TANIELE ROCHA MADUREIRA|[TanyRM](https://github.com/TanyRM)|
