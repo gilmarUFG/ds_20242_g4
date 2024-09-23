@@ -32,7 +32,9 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 3. RF003 - <Descrição do Requisito>.
 4. RF004 - <Descrição do Requisito>.
 5. RF005 - <Descrição do Requisito>.
-6. RF006 - <Descrição do Requisito>.
+6. RF016 - O sistema deve permitir que cidadãos acompanhem seu histórico de vacinação, exibindo todas as vacinas já tomadas.
+7. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
+8. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
 
 ### Requisitos Não Funcionais
 
@@ -41,7 +43,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 3. RNF003 - Desempenho: <Descrição do Requisito não Funcional>..
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
 5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
-6. RNF006 - Portabilidade: <Descrição do Requisito não Funcional>.
+6. RNF006 - Portabilidade: O sistema deve ser compatível com diversas plataformas (web, iOS e Android), permitindo que os cidadãos acessem seu cartão de vacinação virtual de qualquer dispositivo e sistema operacional.
 7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
 
 ### Regras de Negócio
