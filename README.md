@@ -47,7 +47,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
 
 ### Regras de Negócio
-1. RN01 - <Descrição da Regra de Negócio>.
+1. RN01 - As vacinas devem ser associadas à faixa etária, condição de saúde específica, e outras características como gênero ou região, conforme definido pelas normas de vacinação.
 2. RN02 - <Descrição da Regra de Negócio>.
 3. RN03 - <Descrição da Regra de Negócio>.
 4. RN04 - <Descrição da Regra de Negócio>.
