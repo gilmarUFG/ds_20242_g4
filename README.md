@@ -38,11 +38,12 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 1. RF001 - O sistema deve ser capaz de sincronizar automaticamente os dados de vacinação do cidadão com o SUS sempre que uma nova vacina for registrada no sistema local. A sincronização deve ocorrer em tempo real ou em intervalos regulares, garantindo que o histórico de vacinação do cidadão esteja sempre atualizado no sistema do SUS.
 2. RF002 - O sistema deve enviar notificações ao cidadão sempre que seus dados de vacinação forem sincronizados com sucesso. As notificações devem ser enviadas via SMS, e-mail ou aplicativo, conforme a preferência do usuário. O sistema também deve permitir que o cidadão desative essas notificações através das configurações de notificação.
 3. RF003 - O sistema deve permitir que o cidadão consulte seu histórico de vacinação sincronizado com o SUS. A consulta deve exibir uma lista completa e atualizada de todas as vacinas administradas. O sistema deve oferecer opções de filtro por tipo de vacina e data, e deve informar o cidadão sobre qualquer ausência de dados devido a falhas na sincronização.
-4. RF004 - <Descrição do Requisito>.
-5. RF005 - <Descrição do Requisito>.
-6. RF016 - O sistema deve permitir que cidadãos acompanhem seu histórico de vacinação, exibindo todas as vacinas já tomadas.
-7. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
-8. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
+4. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
+5. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
+6. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
+7. RF016 - O sistema deve permitir que cidadãos acompanhem seu histórico de vacinação, exibindo todas as vacinas já tomadas.
+8. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
+9. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
 
 
 ### Requisitos Não Funcionais
