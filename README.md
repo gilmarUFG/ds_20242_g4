@@ -41,7 +41,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 4. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
 5. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
 6. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
-7. RF016 - O sistema deve permitir que cidadãos acompanhem seu histórico de vacinação, exibindo todas as vacinas já tomadas.
+7. RF016 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
 8. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
 9. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
 
@@ -53,7 +53,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
 3. RNF003 - Desempenho: O sistema deve suportar até 100.000 usuários simultâneos sem degradação perceptível de desempenho. 
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
-5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
+5. RNF005 - Manutenibilidade: O sistema deve ser fácil de manter, permitindo modificações, correções e atualizações com baixo custo e impacto, por meio de código modular, bem documentado, e com testes automatizados que garantam a estabilidade das funcionalidades.
 6. RNF006 - Portabilidade: O sistema deve ser compatível com diversas plataformas (web, iOS e Android), permitindo que os cidadãos acessem seu cartão de vacinação virtual de qualquer dispositivo e sistema operacional.
 7. RNF007 - Conectividade: O sistema deve ser capaz de operar de forma eficiente em diferentes condições de conectividade, incluindo conexões de internet de baixa velocidade. Deve garantir a sincronização dos dados de vacinação mesmo em áreas com cobertura de rede limitada, utilizando técnicas de armazenamento em cache e sincronização assíncrona quando necessário.
 
