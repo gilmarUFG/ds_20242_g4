@@ -38,21 +38,27 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 1. RF001 - O sistema deve ser capaz de sincronizar automaticamente os dados de vacinação do cidadão com o SUS sempre que uma nova vacina for registrada no sistema local. A sincronização deve ocorrer em tempo real ou em intervalos regulares, garantindo que o histórico de vacinação do cidadão esteja sempre atualizado no sistema do SUS.
 2. RF002 - O sistema deve enviar notificações ao cidadão sempre que seus dados de vacinação forem sincronizados com sucesso. As notificações devem ser enviadas via SMS, e-mail ou aplicativo, conforme a preferência do usuário. O sistema também deve permitir que o cidadão desative essas notificações através das configurações de notificação.
 3. RF003 - O sistema deve permitir que o cidadão consulte seu histórico de vacinação sincronizado com o SUS. A consulta deve exibir uma lista completa e atualizada de todas as vacinas administradas. O sistema deve oferecer opções de filtro por tipo de vacina e data, e deve informar o cidadão sobre qualquer ausência de dados devido a falhas na sincronização.
-4. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
-5. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
-6. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
-7. RF016 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
-8. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
-9. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
-10.RF019 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
-11.RF20 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
-12.RF21 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
+4. RF004 - O sistema deve permitir que profissionais de saúde autenticados consultem o histórico completo de vacinação de um cidadão, utilizando o CPF ou Cartão SUS como identificador.
+O histórico exibido deve incluir todas as vacinas aplicadas, com detalhes como a data de aplicação, lote da vacina e a validade de cada imunização.
+5. RF005 - O sistema deve permitir que profissionais de saúde consultem as vacinas pendentes ou que necessitem de reforço para um cidadão. 
+Essas informações devem ser destacadas no histórico de vacinação, com datas recomendadas para a aplicação das doses pendentes ou reforços, baseadas na faixa etária e no calendário nacional de vacinação.
+6. RF006 - O sistema deve permitir a consulta rápida do histórico de vacinação de um cidadão em situações de emergência. 
+O profissional de saúde deve ser capaz de acessar vacinas específicas relacionadas à doença em questão (como surtos ou doenças prevalentes) de forma destacada, utilizando o CPF ou Cartão SUS para a busca.
+7. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
+8. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
+9. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
+10. RF016 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
+11. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
+12. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
+13.RF019 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
+14.RF20 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
+15.RF21 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
 
 ### Requisitos Não Funcionais
 
 
 1. RNF001 - Usabilidade: O sistema deve ser intuitivo e fácil de usar, permitindo que cidadãos de todas as idades e níveis de alfabetização tecnológica possam acessar e utilizar suas funcionalidades sem dificuldades. A interface deve ser clara, com instruções visuais e textuais simples.
-2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
+2. RNF002 - Segurança: O sistema deve garantir a segurança dos dados pessoais e de saúde tanto de cidadãos quanto de profissionais de saúde. O acesso ao sistema deve ser restrito a usuários autenticados, exigindo login com senha e um segundo fator de autenticação para ambos os grupos de usuários. 
 3. RNF003 - Desempenho: O sistema deve suportar até 100.000 usuários simultâneos sem degradação perceptível de desempenho. 
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
 5. RNF005 - Manutenibilidade: O sistema deve ser fácil de manter, permitindo modificações, correções e atualizações com baixo custo e impacto, por meio de código modular, bem documentado, e com testes automatizados que garantam a estabilidade das funcionalidades.
@@ -65,7 +71,8 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 2. RN02 - Os cidadãos devem ter acesso ao seu histórico de vacinação a qualquer momento, podendo visualizar ou imprimir suas informações de vacinação de forma segura e controlada.
 3. RN03 - O calendário de vacinação deve ser atualizado automaticamente no sistema, seguindo as diretrizes do Ministério da Saúde e permitindo ao cidadão verificar quando e quais vacinas deve tomar.
 4. RN04 - O sistema deve permitir que os usuários selecionem o canal de notificação (e-mail, SMS ou app) para receber os lembretes de vacinação. Caso o envio falhe pelo canal principal, o sistema deve tentar reenviar a notificação pelo canal secundário configurado.
-5. RN05 - <Descrição da Regra de Negócio>.
+5. RN05 - Os usuários profissionais de saúde devem poder consultar os dados de cidadãos sob sua responsabilidade, respeitando a privacidade e a segurança.
+   
 
 
 ### Modelo Arquitetural
