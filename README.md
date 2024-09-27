@@ -42,17 +42,22 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 O histórico exibido deve incluir todas as vacinas aplicadas, com detalhes como a data de aplicação, lote da vacina e a validade de cada imunização.
 5. RF005 - O sistema deve permitir que profissionais de saúde consultem as vacinas pendentes ou que necessitem de reforço para um cidadão. 
 Essas informações devem ser destacadas no histórico de vacinação, com datas recomendadas para a aplicação das doses pendentes ou reforços, baseadas na faixa etária e no calendário nacional de vacinação.
-6. RF006 - O sistema deve permitir a consulta rápida do histórico de vacinação de um cidadão em situações de emergência. 
+6. RF006 - O sistema deve comunicar com bases de dados do Múnicio e Estado para importação de informação do usúario para o SUS.
+7. RF007 -O sistema deve permitir ao usúario visualizar de onde suas informações estão sendo importadas e o status de cada importação ( Andamento, Concluída, Falha).
+8. RF008 - O Sistema deve permitir ao usúario  a abertura de solicitação de alteração de dados diretamente para o local de Importação.
+9. RF009 - O sistema deve permitir a consulta rápida do histórico de vacinação de um cidadão em situações de emergência. 
 O profissional de saúde deve ser capaz de acessar vacinas específicas relacionadas à doença em questão (como surtos ou doenças prevalentes) de forma destacada, utilizando o CPF ou Cartão SUS para a busca.
-7. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
-8. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
-9. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
-10. RF016 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
-11. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
-12. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
-13.RF019 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
-14.RF20 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
-15.RF21 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
+10. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
+11. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
+12. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
+13. RF013 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
+14. RF014 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
+15. RF015 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
+16.RF016 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
+17.RF17 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
+18.RF18 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
+
+
 
 ### Requisitos Não Funcionais
 
@@ -60,7 +65,7 @@ O profissional de saúde deve ser capaz de acessar vacinas específicas relacion
 1. RNF001 - Usabilidade: O sistema deve ser intuitivo e fácil de usar, permitindo que cidadãos de todas as idades e níveis de alfabetização tecnológica possam acessar e utilizar suas funcionalidades sem dificuldades. A interface deve ser clara, com instruções visuais e textuais simples.
 2. RNF002 - Segurança: O sistema deve garantir a segurança dos dados pessoais e de saúde tanto de cidadãos quanto de profissionais de saúde. O acesso ao sistema deve ser restrito a usuários autenticados, exigindo login com senha e um segundo fator de autenticação para ambos os grupos de usuários. 
 3. RNF003 - Desempenho: O sistema deve suportar até 100.000 usuários simultâneos sem degradação perceptível de desempenho. 
-4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
+4. RNF004 - Confiabilidade: As informações apresentadas devem ser do CPF do cadastro, o histórico apresentado deve ser fidedigno as bases do Município e do  Estado, sem inconsistências. 
 5. RNF005 - Manutenibilidade: O sistema deve ser fácil de manter, permitindo modificações, correções e atualizações com baixo custo e impacto, por meio de código modular, bem documentado, e com testes automatizados que garantam a estabilidade das funcionalidades.
 6. RNF006 - Portabilidade: O sistema deve ser compatível com diversas plataformas (web, iOS e Android), permitindo que os cidadãos acessem seu cartão de vacinação virtual de qualquer dispositivo e sistema operacional.
 7. RNF007 - Conectividade: O sistema deve ser capaz de operar de forma eficiente em diferentes condições de conectividade, incluindo conexões de internet de baixa velocidade. Deve garantir a sincronização dos dados de vacinação mesmo em áreas com cobertura de rede limitada, utilizando técnicas de armazenamento em cache e sincronização assíncrona quando necessário.
@@ -72,6 +77,7 @@ O profissional de saúde deve ser capaz de acessar vacinas específicas relacion
 3. RN03 - O calendário de vacinação deve ser atualizado automaticamente no sistema, seguindo as diretrizes do Ministério da Saúde e permitindo ao cidadão verificar quando e quais vacinas deve tomar.
 4. RN04 - O sistema deve permitir que os usuários selecionem o canal de notificação (e-mail, SMS ou app) para receber os lembretes de vacinação. Caso o envio falhe pelo canal principal, o sistema deve tentar reenviar a notificação pelo canal secundário configurado.
 5. RN05 - Os usuários profissionais de saúde devem poder consultar os dados de cidadãos sob sua responsabilidade, respeitando a privacidade e a segurança.
+6. RN06 - Ao logar no Sistema pela primeira vez o usúario deve confirmar uma série de Dados ( Nome Completo, Data de Nascimento, Cidade de Nascimento, Hospital de Nascimento, Local de Residência Atual).
    
 
 
