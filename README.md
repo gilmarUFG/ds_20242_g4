@@ -44,7 +44,9 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 7. RF016 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
 8. RF017 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
 9. RF018 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
-
+10.RF019 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
+11.RF20 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
+12.RF21 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
 
 ### Requisitos Não Funcionais
 
@@ -62,7 +64,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 1. RN01 - As vacinas devem ser associadas à faixa etária, condição de saúde específica, e outras características como gênero ou região, conforme definido pelas normas de vacinação.
 2. RN02 - Os cidadãos devem ter acesso ao seu histórico de vacinação a qualquer momento, podendo visualizar ou imprimir suas informações de vacinação de forma segura e controlada.
 3. RN03 - O calendário de vacinação deve ser atualizado automaticamente no sistema, seguindo as diretrizes do Ministério da Saúde e permitindo ao cidadão verificar quando e quais vacinas deve tomar.
-4. RN04 - <Descrição da Regra de Negócio>.
+4. RN04 - O sistema deve permitir que os usuários selecionem o canal de notificação (e-mail, SMS ou app) para receber os lembretes de vacinação. Caso o envio falhe pelo canal principal, o sistema deve tentar reenviar a notificação pelo canal secundário configurado.
 5. RN05 - <Descrição da Regra de Negócio>.
 
 
