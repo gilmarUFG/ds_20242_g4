@@ -51,7 +51,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 
 1. RNF001 - Usabilidade: O sistema deve ser intuitivo e fácil de usar, permitindo que cidadãos de todas as idades e níveis de alfabetização tecnológica possam acessar e utilizar suas funcionalidades sem dificuldades. A interface deve ser clara, com instruções visuais e textuais simples.
 2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
-3. RNF003 - Desempenho: <Descrição do Requisito não Funcional>..
+3. RNF003 - Desempenho: O sistema deve suportar até 100.000 usuários simultâneos sem degradação perceptível de desempenho. 
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
 5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
 6. RNF006 - Portabilidade: O sistema deve ser compatível com diversas plataformas (web, iOS e Android), permitindo que os cidadãos acessem seu cartão de vacinação virtual de qualquer dispositivo e sistema operacional.
