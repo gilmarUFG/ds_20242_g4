@@ -14,7 +14,7 @@ Como **agente de saúde**, eu quero **monitorar a cobertura vacinal de uma deter
 #### Cenário 1: Visualização da cobertura vacinal por região
 - **Dado** que o agente de saúde está na página de monitoramento de cobertura vacinal,
 - **Quando** o agente seleciona uma região no mapa,
-- **Então** o sistema deve exibir o índice de vacinação da região selecionada,
+- **Então** o sistema deve exibir o índice de vacinação da região selecionada (por meio de gráficos e/ou tabelas),
 - **E** deve permitir filtrar os dados por tipo de vacina e faixa etária.
 
 #### Cenário 2: Acesso negado por falta de autorização
@@ -31,7 +31,7 @@ Como **agente de saúde**, eu quero **monitorar a cobertura vacinal de uma deter
 Baixa
 
 ### **Estimativa de Esforço:**  
-13 Story Points 
+10 Story Points 
 
 ### **Dependências:**  
 - Integração com a base de dados de vacinação do SUS.
