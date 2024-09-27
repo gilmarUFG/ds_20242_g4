@@ -27,9 +27,9 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 
 ### Backlog do Produto
 
-1. RF001 - <Descrição do Requisito>.
-2. RF002 - <Descrição do Requisito>.
-3. RF003 - <Descrição do Requisito>.
+1. RF001 - O sistema deve integrar com as informações do SUS para identificar vacinas pendentes.
+2. RF002 - O usuário deve poder selecionar o canal de preferência na configuração de notificações.
+3. RF003 - A notificação deve incluir uma opção de confirmação que o usuário pode clicar.
 4. RF004 - <Descrição do Requisito>.
 5. RF005 - <Descrição do Requisito>.
 6. RF016 - O sistema deve permitir que cidadãos acompanhem seu histórico de vacinação, exibindo todas as vacinas já tomadas.
@@ -42,13 +42,13 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
 3. RNF003 - Desempenho: <Descrição do Requisito não Funcional>..
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
-5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
+5. RNF005 - Manutenibilidade: O sistema deve ser fácil de manter, permitindo modificações, correções e atualizações com baixo custo e impacto, por meio de código modular, bem documentado, e com testes automatizados que garantam a estabilidade das funcionalidades.
 6. RNF006 - Portabilidade: O sistema deve ser compatível com diversas plataformas (web, iOS e Android), permitindo que os cidadãos acessem seu cartão de vacinação virtual de qualquer dispositivo e sistema operacional.
 7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
 
 ### Regras de Negócio
 1. RN01 - As vacinas devem ser associadas à faixa etária, condição de saúde específica, e outras características como gênero ou região, conforme definido pelas normas de vacinação.
-2. RN02 - <Descrição da Regra de Negócio>.
+2. RN02 - O sistema deve enviar automaticamente lembretes de vacinação aos usuários com base nas datas recomendadas pelo calendário do SUS, respeitando a periodicidade de uma semana de antecedência. Caso o usuário não confirme o recebimento da notificação, um novo lembrete deve ser enviado após três dias.
 3. RN03 - <Descrição da Regra de Negócio>.
 4. RN04 - <Descrição da Regra de Negócio>.
 5. RN05 - <Descrição da Regra de Negócio>.
