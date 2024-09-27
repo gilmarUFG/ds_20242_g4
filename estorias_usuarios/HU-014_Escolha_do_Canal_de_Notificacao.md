@@ -33,7 +33,7 @@ E o sistema deve aplicar a mudança imediatamente.
 
 **Estimativa de Esforço:** 5 Story Points
 
-**Dependências:** Sistema de notificação configurável (História HU-004).
+**Dependências:** Sistema de notificação configurável.
 
 **Notas/Comentários Adicionais:**  
 A interface de seleção deve ser intuitiva e permitir fácil configuração pelo usuário.

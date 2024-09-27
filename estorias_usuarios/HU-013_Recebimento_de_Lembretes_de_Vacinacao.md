@@ -33,7 +33,7 @@ E notificar o usuário caso a falha persista.
 
 **Estimativa de Esforço:** 8 Story Points
 
-**Dependências:** Sincronização de dados com o SUS (História HU-001).
+**Dependências:** Sincronização de dados com o SUS .
 
 **Notas/Comentários Adicionais:**  
 As notificações devem ser claras e acessíveis ao usuário, garantindo que ele entenda a importância de se vacinar.
