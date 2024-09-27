@@ -61,7 +61,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 ### Regras de Negócio
 1. RN01 - As vacinas devem ser associadas à faixa etária, condição de saúde específica, e outras características como gênero ou região, conforme definido pelas normas de vacinação.
 2. RN02 - Os cidadãos devem ter acesso ao seu histórico de vacinação a qualquer momento, podendo visualizar ou imprimir suas informações de vacinação de forma segura e controlada.
-3. RN03 - <Descrição da Regra de Negócio>.
+3. RN03 - O calendário de vacinação deve ser atualizado automaticamente no sistema, seguindo as diretrizes do Ministério da Saúde e permitindo ao cidadão verificar quando e quais vacinas deve tomar.
 4. RN04 - <Descrição da Regra de Negócio>.
 5. RN05 - <Descrição da Regra de Negócio>.
 
