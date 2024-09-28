@@ -80,9 +80,25 @@ O profissional de saúde deve ser capaz de acessar vacinas específicas relacion
 6. RN06 - Ao logar no Sistema pela primeira vez o usúario deve confirmar uma série de Dados ( Nome Completo, Data de Nascimento, Cidade de Nascimento, Hospital de Nascimento, Local de Residência Atual).
    
 
-
 ### Modelo Arquitetural
-<Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
+O **"Registro de Vacina"** adota um modelo de **Arquitetura Orientada a Serviços (SOA)** para garantir flexibilidade, interoperabilidade e integração com sistemas externos, como o SUS. A arquitetura SOA permite que as funcionalidades do sistema sejam implementadas como serviços independentes e reutilizáveis, promovendo escalabilidade e facilitando a manutenção.
+
+## 1. Camadas do Modelo SOA
+- **Camada de Apresentação (Frontend)**: Fornece interfaces gráficas para usuários (cidadãos e profissionais de saúde). Desenvolvida em React para web e React Native para mobile (iOS e Android), garante uma experiência de usuário consistente e responsiva.
+
+- **Camada de Serviços (Backend)**: Composta por serviços independentes que executam funções específicas, como sincronização de dados, consulta de histórico de vacinação, notificações e autenticação. Cada serviço se comunica com os outros por meio de APIs RESTful.
+
+- **Camada de Integração**: Contém serviços que se comunicam com sistemas externos (e.g., APIs do SUS) para sincronizar dados de vacinação. Inclui um **API Gateway** para gerenciamento centralizado de requisições e autenticação de usuários.
+
+- **Camada de Persistência**: Utiliza um banco de dados relacional para armazenar informações do usuário e histórico de vacinação. Implementa caching para otimizar a performance e garantir a sincronização eficiente, mesmo em condições de baixa conectividade.
+
+## 2. Principais Serviços
+- **Serviço de Sincronização**: Sincroniza automaticamente os dados de vacinação com o SUS, garantindo que o histórico do cidadão esteja sempre atualizado.
+- **Serviço de Notificações**: Gerencia o envio de lembretes e atualizações para os usuários através dos canais preferidos (SMS, e-mail ou aplicativo).
+- **Serviço de Autenticação**: Realiza autenticação e autorização de usuários, garantindo segurança e controle de acesso.
+
+## 3. Benefícios da Arquitetura SOA
+A adoção de SOA promove a modularidade do sistema, facilita a integração com serviços de terceiros e possibilita a escalabilidade horizontal dos serviços. Além disso, o modelo permite que cada serviço evolua independentemente, reduzindo o impacto de mudanças e simplificando o desenvolvimento contínuo.
 
 
 ### Modelo de Interfaces Gráficas
