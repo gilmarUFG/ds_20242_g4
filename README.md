@@ -50,9 +50,9 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 13. RF013 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
 14. RF014 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
 15. RF015 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
-16.RF016 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
-17.RF017 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
-18.RF018 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
+16. RF016 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
+17. RF017 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
+18. RF018 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
 
 
 
