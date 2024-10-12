@@ -134,36 +134,36 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de classes dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de persistência dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Implementação dos itens do backlog <x,y,z>*|28/09/2024|11/10/2024||Programada|
-|4|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de classes dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de persistência dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Implementação dos itens do backlog <x,y,z>*|12/10/2024|25/10/2024||Programada|
-|5|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de classes dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Implementação dos itens do backlog <x,y,z>*|26/10/2024|08/11/2024||Programada|
-|6|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de classes dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de persistência dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Implementação dos itens do backlog <x,y,z>*|09/11/2024|22/11/2024||Programada|
-|7|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de classes dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de persistência dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Implementação dos itens do backlog <x,y,z>*|23/11/2024|06/12/2024||Programada|
+|3|Especificação de estórias de usuários dos Item(ns) do backlog RF014|28/09/2024|11/10/2024||Programada|
+|3|Diagrama de classes dos Item(ns) do backlog RF014|28/09/2024|11/10/2024||Programada|
+|3|Diagrama de interação/sequencia dos itens do backlog RF014|28/09/2024|11/10/2024||Programada|
+|3|Projeto de Interfaces gráficas dos itens do backlog RF014|28/09/2024|11/10/2024||Programada|
+|3|Projeto de persistência dos itens do backlog RF014|28/09/2024|11/10/2024||Programada|
+|3|Implementação dos itens do backlog RF014*|28/09/2024|11/10/2024||Programada|
+|4|Especificação de estórias de usuários dos Item(ns) do backlog RF003|12/10/2024|25/10/2024||Programada|
+|4|Diagrama de classes dos Item(ns) do backlog RF003|12/10/2024|25/10/2024||Programada|
+|4|Diagrama de interação/sequencia dos itens do backlog RF003|12/10/2024|25/10/2024||Programada|
+|4|Projeto de Interfaces gráficas dos itens do backlog RF003|12/10/2024|25/10/2024||Programada|
+|4|Projeto de persistência dos itens do backlog RF003|12/10/2024|25/10/2024||Programada|
+|4|Implementação dos itens do backlog RF003*|12/10/2024|25/10/2024||Programada|
+|5|Especificação de estórias de usuários dos Item(ns) do backlog RF004|26/10/2024|08/11/2024||Programada|
+|5|Diagrama de classes dos Item(ns) do backlog RF004|26/10/2024|08/11/2024||Programada|
+|5|Diagrama de interação/sequencia dos itens do backlog RF004|26/10/2024|08/11/2024||Programada|
+|5|Projeto de Interfaces gráficas dos itens do backlog RF004|26/10/2024|08/11/2024||Programada|
+|5|Projeto de persistência dos itens do backlog RF004|26/10/2024|08/11/2024||Programada|
+|5|Implementação dos itens do backlog RF004*|26/10/2024|08/11/2024||Programada|
+|6|Especificação de estórias de usuários dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024||Programada|
+|6|Diagrama de classes dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024||Programada|
+|6|Diagrama de interação/sequencia dos itens do backlog RF016, RF017|09/11/2024|22/11/2024||Programada|
+|6|Projeto de Interfaces gráficas dos itens do backlog RF016, RF017|09/11/2024|22/11/2024||Programada|
+|6|Projeto de persistência dos itens do backlog RF016, RF017|09/11/2024|22/11/2024||Programada|
+|6|Implementação dos itens do backlog RF016, RF017*|09/11/2024|22/11/2024||Programada|
+|7|Especificação de estórias de usuários dos Item(ns) do backlog RF018|23/11/2024|06/12/2024||Programada|
+|7|Diagrama de classes dos Item(ns) do backlog RF018|23/11/2024|06/12/2024||Programada|
+|7|Diagrama de interação/sequencia dos itens do backlog RF018|23/11/2024|06/12/2024||Programada|
+|7|Projeto de Interfaces gráficas dos itens do backlog RF018|23/11/2024|06/12/2024||Programada|
+|7|Projeto de persistência dos itens do backlog RF018|23/11/2024|06/12/2024||Programada|
+|7|Implementação dos itens do backlog RF018*|23/11/2024|06/12/2024||Programada|
 |8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
 
