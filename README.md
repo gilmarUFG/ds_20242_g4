@@ -103,7 +103,7 @@ A adoção de SOA promove a modularidade do sistema, facilita a integração com
 
 
 ### Tecnologia de Persistência de Dados
-<Apresentar uma descrição sucinta do modelo de persistência do Produto.>
+Para esse projeto foi utilizado o Banco de Dados Relacional MySQL pois entendemos que a abordagem atende as configurações e proriedades do projeto. 
 
 
 ### Local do _Deploy_
