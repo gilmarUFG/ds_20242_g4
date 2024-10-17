@@ -1,16 +1,20 @@
 package com.registro.vacina.RegistroVacina.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.registro.vacina.RegistroVacina.entities.FaixaEtaria;
-import lombok.*;
+
 
 
 public class CalendarioDto {
 
     private int calendarioId;
     private String categoria;
-    private int doses;
-    private FaixaEtaria faixa_etaria;
+    private String doses;
+    @JsonProperty(value = "faixa_etaria" )
+    private FaixaEtariaDTO faixaEtariaObjeto;
+    //priavate visibilidade do atributo > qual Objeto vc vai querer isnatnciar> Nome da váriavel que vc vai usar p fazer operação
     private String vacinas;
 
 
@@ -18,11 +22,11 @@ public class CalendarioDto {
     //Criar para as demais atributos/ colunas
 
 
-    public int getDoses() {
+    public String getDoses() {
         return doses;
     }
 
-    public void setDoses(int doses) {
+    public void setDoses(String doses) {
         this.doses = doses;
     }
 
@@ -52,11 +56,11 @@ public class CalendarioDto {
         this.vacinas = vacinas;
     }
 
-    public FaixaEtaria getFaixa_etaria() {
-        return faixa_etaria;
+    public FaixaEtariaDTO getFaixaEtariaObjeto() {
+        return faixaEtariaObjeto;
     }
 
-    public void setFaixa_etaria(FaixaEtaria faixa_etaria) {
-        this.faixa_etaria = faixa_etaria;
+    public void setFaixaEtariaObjeto(FaixaEtariaDTO faixaEtariaObjeto) {
+        this.faixaEtariaObjeto = faixaEtariaObjeto;
     }
 }

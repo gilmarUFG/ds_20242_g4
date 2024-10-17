@@ -15,7 +15,7 @@ public class Doses {
     private int id;
 
     @Column(name = "quantidade_dose")
-    private int quatidadeDose;
+    private String quatidadeDose;
 
     public int getId() {
         return id;
@@ -25,11 +25,11 @@ public class Doses {
         this.id = id;
     }
 
-    public int getQuatidadeDose() {
-        return quatidadeDose;
+    public String getQuatidadeDose() {
+        return this.quatidadeDose;
     }
 
-    public void setQuatidadeDose(int quatidadeDose) {
+    public void setQuatidadeDose(String quatidadeDose) {
         this.quatidadeDose = quatidadeDose;
     }
 }

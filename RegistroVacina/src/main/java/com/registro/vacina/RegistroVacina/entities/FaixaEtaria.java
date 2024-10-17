@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "faixaetaria")
+@Table(name = "faixa_etaria")
 public class FaixaEtaria {
 
     @Id
@@ -16,7 +16,7 @@ public class FaixaEtaria {
     @Column(name = "meses_inicial")
     private int mesesInicial;
 
-    @Id
+
     @Column(name = "meses_final")
     private int mesesFinal;
 

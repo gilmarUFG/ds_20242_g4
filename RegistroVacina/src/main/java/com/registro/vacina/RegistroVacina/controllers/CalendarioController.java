@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,10 +22,11 @@ public class CalendarioController {
     @Autowired
     private CalendarioService calendarioService;
 
-    @GetMapping("/vacinacao")
-    public List<CalendarioDto> consultaCalendario(){ // Visbilidade/Retorno/nome/(parametros)/{}
 
-        return calendarioService.buscarCalendario();
+    @GetMapping("/vacinacao")
+    public List<CalendarioDto> consultaCalendario(@RequestParam int idade){ // Visbilidade/Retorno/nome/(parametros)/{}
+
+        return calendarioService.buscarCalendario(idade);
 
     }
 
