@@ -99,7 +99,7 @@ A adoção de SOA promove a modularidade do sistema, facilita a integração com
 
 
 ### Modelo de Interfaces Gráficas
-<Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
+O modelo de interface gráfica do Registro de Vacinas foi feito utilizando o [Figma](https://www.figma.com/proto/JqkmSr9b5dnG0GsE35XNld/Sistema-de-Registro-de-Vacina?node-id=38-2&node-type=frame&t=tr4pTJ8GM7ZK2pxG-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
 
 
 ### Tecnologia de Persistência de Dados
