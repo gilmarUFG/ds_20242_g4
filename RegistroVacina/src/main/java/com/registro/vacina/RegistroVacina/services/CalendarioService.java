@@ -30,14 +30,6 @@ public class CalendarioService {
   @Autowired
    private VacinaService vacinaService;
 
-
-
-
-
-
-//Service e Repositiory para todos
-
-
     public List<CalendarioDto> buscarCalendario(int idade)
     {
 
@@ -74,7 +66,6 @@ public class CalendarioService {
 
 
 
-
             calendarioDto.setCategoria(categoria.getNome());
             calendarioDto.setDoses(dose.getQuatidadeDose());
             calendarioDto.setVacinas(vacina.getNomeVacina());
@@ -86,19 +77,11 @@ public class CalendarioService {
             if(validarFaixaEtaria(idade, converterMesesParaAnos(faixaEtaria.getMesesInicial()), converterMesesParaAnos(faixaEtaria.getMesesFinal()) )) {
                 calendarioCompleto.add(calendarioDto);
             }
-
-
-
-
-
-
         }
 
         return calendarioCompleto;
-
-
     }
-
+    // Regra de alteração de meses  para anos
     public int converterMesesParaAnos(int meses) {
         return meses / 12;
     }
