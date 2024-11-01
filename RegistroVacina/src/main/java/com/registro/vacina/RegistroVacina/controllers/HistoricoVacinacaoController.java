@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -22,26 +23,8 @@ public class HistoricoVacinacaoController {
 
 
     @GetMapping("/historico")
-    public List<HistoricoVacinacaoDTO> consultaGistoricoVacinacao(@RequestParam int pacienteId) {
-        return historicoVacinacaoService.buscarHistoricoVacinacao(pacienteId);
-
-
-
-//        List<HistoricoVacinacaoDTO> historicoDTO = new ArrayList<>();
-//
-//        for(HistoricoVacinacao h : historico){
-//            HistoricoVacinacaoDTO historicoVacinacaoDTO = new HistoricoVacinacaoDTO();
-//            historicoVacinacaoDTO.setDataVacinacao(h.getDataVacinacao());
-//            historicoVacinacaoDTO.setLoteVacinacao(h.getLoteVacinacao());
-//            historicoVacinacaoDTO.setAnoVencimneto(h.getAnoVencimento());
-//
-//            historicoDTO.add(historicoVacinacaoDTO);
-//        }
-//
-//
-//        return historicoDTO;
-//    }
-
+    public List<HistoricoVacinacaoDTO> consultaGistoricoVacinacao(@RequestParam int pacienteId, @RequestParam(required = false) String nomeVacina, @RequestParam(required = false)  String dataVacinacao) {
+        return historicoVacinacaoService.buscarHistoricoVacinacao(pacienteId, nomeVacina, dataVacinacao);
 
     }
 }
