@@ -31,7 +31,7 @@ Como **agente de saúde**, eu quero **monitorar a cobertura vacinal de uma deter
 Baixa
 
 ### **Estimativa de Esforço:**  
-10 Story Points 
+13 Story Points 
 
 ### **Dependências:**  
 - Integração com a base de dados de vacinação do SUS.
