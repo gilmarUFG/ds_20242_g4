@@ -38,24 +38,21 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 1. RF001 - O sistema deve ser capaz de sincronizar automaticamente os dados de vacinação do cidadão com o SUS sempre que uma nova vacina for registrada no sistema local. A sincronização deve ocorrer em tempo real ou em intervalos regulares, garantindo que o histórico de vacinação do cidadão esteja sempre atualizado no sistema do SUS.
 2. RF002 - O sistema deve enviar notificações ao cidadão sempre que seus dados de vacinação forem sincronizados com sucesso. As notificações devem ser enviadas via SMS, e-mail ou aplicativo, conforme a preferência do usuário. O sistema também deve permitir que o cidadão desative essas notificações através das configurações de notificação.
 3. RF003 - O sistema deve permitir que o cidadão consulte seu histórico de vacinação sincronizado com o SUS. A consulta deve exibir uma lista completa e atualizada de todas as vacinas administradas. O sistema deve oferecer opções de filtro por tipo de vacina e data, e deve informar o cidadão sobre qualquer ausência de dados devido a falhas na sincronização.
-4. RF004 - O sistema deve permitir que profissionais de saúde autenticados consultem o histórico completo de vacinação de um cidadão, utilizando o CPF ou Cartão SUS como identificador.
-O histórico exibido deve incluir todas as vacinas aplicadas, com detalhes como a data de aplicação, lote da vacina e a validade de cada imunização.
-5. RF005 - O sistema deve permitir que profissionais de saúde consultem as vacinas pendentes ou que necessitem de reforço para um cidadão. 
-Essas informações devem ser destacadas no histórico de vacinação, com datas recomendadas para a aplicação das doses pendentes ou reforços, baseadas na faixa etária e no calendário nacional de vacinação.
+4. RF004 - O sistema deve permitir que profissionais de saúde autenticados consultem o histórico completo de vacinação de um cidadão, utilizando o CPF ou Cartão SUS como identificador. O histórico exibido deve incluir todas as vacinas aplicadas, com detalhes como a data de aplicação, lote da vacina e a validade de cada imunização.
+5. RF005 - O sistema deve permitir que profissionais de saúde consultem as vacinas pendentes ou que necessitem de reforço para um cidadão. Essas informações devem ser destacadas no histórico de vacinação, com datas recomendadas para a aplicação das doses pendentes ou reforços, baseadas na faixa etária e no calendário nacional de vacinação.
 6. RF006 - O sistema deve comunicar com bases de dados do Múnicio e Estado para importação de informação do usúario para o SUS.
 7. RF007 -O sistema deve permitir ao usúario visualizar de onde suas informações estão sendo importadas e o status de cada importação ( Andamento, Concluída, Falha).
 8. RF008 - O Sistema deve permitir ao usúario  a abertura de solicitação de alteração de dados diretamente para o local de Importação.
-9. RF009 - O sistema deve permitir a consulta rápida do histórico de vacinação de um cidadão em situações de emergência. 
-O profissional de saúde deve ser capaz de acessar vacinas específicas relacionadas à doença em questão (como surtos ou doenças prevalentes) de forma destacada, utilizando o CPF ou Cartão SUS para a busca.
+9. RF009 - O sistema deve permitir a consulta rápida do histórico de vacinação de um cidadão em situações de emergência. O profissional de saúde deve ser capaz de acessar vacinas específicas relacionadas à doença em questão (como surtos ou doenças prevalentes) de forma destacada, utilizando o CPF ou Cartão SUS para a busca.
 10. RF010 - O sistema deve permitir que o usuário receba uma notificação detalhada quando ocorrer um erro de sincronização de seus dados com o SUS, informando o motivo do erro e dando orientações de como corrigi-lo.
 11. RF011 - O sistema deve registrar automaticamente os logs de erro relacionados à sincronização de dados com o SUS, incluindo detalhes como data, hora, código do erro, e descrição do problema, para que a equipe técnica possa verificar e corrigir.
 12. RF012 - O sistema deve permitir que o usuário receba uma notificação quando um erro de sincronização de dados com o SUS for resolvido, confirmando que suas informações de vacinação estão atualizadas e corretas.
 13. RF013 - O sistema deve permitir que o cidadão visualize, em um mapa interativo, os pontos de vacinação disponíveis e o índice de cobertura vacinal de uma região específica, fornecendo informações detalhadas para que o usuário possa se manter informado e tomar decisões de prevenção.
 14. RF014 - O sistema deve permitir que cidadãos visualizem as próximas doses de vacina que precisam tomar, com base no calendário oficial de vacinação.
 15. RF015 - O sistema deve permitir que agentes de saúde monitorem a cobertura vacinal de uma determinada região.
-16.RF016 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
-17.RF17 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
-18.RF18 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
+16. RF016 - O sistema deve enviar automaticamente lembretes de vacinação para os usuários com vacinas pendentes, utilizando as informações do SUS, para garantir que as vacinas estejam atualizadas conforme o calendário vacinal.
+17. RF017 - O sistema deve permitir que os usuários escolham o canal de notificação de sua preferência (e-mail, SMS ou app) para receber lembretes de vacinação, garantindo que as comunicações sejam personalizadas e eficazes.
+18. RF018 -O sistema deve permitir que os usuários confirmem o recebimento dos lembretes de vacinação através de um botão ou link na notificação, registrando a confirmação para acompanhamento e envio de lembretes adicionais se necessário.
 
 
 
@@ -102,11 +99,11 @@ A adoção de SOA promove a modularidade do sistema, facilita a integração com
 
 
 ### Modelo de Interfaces Gráficas
-<Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
+O modelo de interface gráfica do Registro de Vacinas foi feito utilizando o [Figma](https://www.figma.com/proto/JqkmSr9b5dnG0GsE35XNld/Sistema-de-Registro-de-Vacina?node-id=38-2&node-type=frame&t=tr4pTJ8GM7ZK2pxG-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
 
 
 ### Tecnologia de Persistência de Dados
-<Apresentar uma descrição sucinta do modelo de persistência do Produto.>
+Para esse projeto foi utilizado o Banco de Dados Relacional MySQL pois entendemos que a abordagem atende as configurações e proriedades do projeto. 
 
 
 ### Local do _Deploy_
@@ -120,11 +117,11 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
 |2|Preparação|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
+|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Programada|
+|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Programada|
+|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Programada|
+|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Programada|
+|7|Item(ns) do backlog RF018|23/11/2024|06/12/2024|Grupo|Programada|
 |8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
 
@@ -137,36 +134,36 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de classes dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de persistência dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Implementação dos itens do backlog <x,y,z>*|28/09/2024|11/10/2024||Programada|
-|4|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de classes dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de persistência dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Implementação dos itens do backlog <x,y,z>*|12/10/2024|25/10/2024||Programada|
-|5|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de classes dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Implementação dos itens do backlog <x,y,z>*|26/10/2024|08/11/2024||Programada|
-|6|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de classes dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de persistência dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Implementação dos itens do backlog <x,y,z>*|09/11/2024|22/11/2024||Programada|
-|7|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de classes dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de persistência dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Implementação dos itens do backlog <x,y,z>*|23/11/2024|06/12/2024||Programada|
+|3|Especificação de estórias de usuários dos Item(ns) do backlog RF014|28/09/2024|11/10/2024| Aline Nunes|Programada|
+|3|Diagrama de classes dos Item(ns) do backlog RF014|28/09/2024|11/10/2024|Aline Nunes e Taniele|Programada|
+|3|Diagrama de interação/sequencia dos itens do backlog RF014|28/09/2024|11/10/2024| Stephany|Programada|
+|3|Projeto de Interfaces gráficas dos itens do backlog RF014|28/09/2024|11/10/2024|Aline Lima, Raquel e Stephany|Programada|
+|3|Projeto de persistência dos itens do backlog RF014|28/09/2024|11/10/2024|Thayliny|Programada|
+|3|Implementação dos itens do backlog RF014*|28/09/2024|11/10/2024|Stephany e Thayliny|Programada|
+|4|Especificação de estórias de usuários dos Item(ns) do backlog RF003|12/10/2024|25/10/2024|Stephany|Programada|
+|4|Diagrama de classes dos Item(ns) do backlog RF003|12/10/2024|25/10/2024|Aline Nunes e Taniele|Programada|
+|4|Diagrama de interação/sequencia dos itens do backlog RF003|12/10/2024|25/10/2024|Stephany|Programada|
+|4|Projeto de Interfaces gráficas dos itens do backlog RF003|12/10/2024|25/10/2024|Aline Lima e Raquel|Programada|
+|4|Projeto de persistência dos itens do backlog RF003|12/10/2024|25/10/2024|Raquel e Thayliny|Programada|
+|4|Implementação dos itens do backlog RF003*|12/10/2024|25/10/2024|Raquel, Stephany e Thayliny|Programada|
+|5|Especificação de estórias de usuários dos Item(ns) do backlog RF004|26/10/2024|08/11/2024|Raquel|Programada|
+|5|Diagrama de classes dos Item(ns) do backlog RF004|26/10/2024|08/11/2024|Aline Nunes e Taniele|Programada|
+|5|Diagrama de interação/sequencia dos itens do backlog RF004|26/10/2024|08/11/2024|Thayliny|Programada|
+|5|Projeto de Interfaces gráficas dos itens do backlog RF004|26/10/2024|08/11/2024|Aline Lima e Raquel|Programada|
+|5|Projeto de persistência dos itens do backlog RF004|26/10/2024|08/11/2024|Thayliny|Programada|
+|5|Implementação dos itens do backlog RF004*|26/10/2024|08/11/2024|Aline Lima e Stephany|Programada|
+|6|Especificação de estórias de usuários dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Aline Nunes|Programada|
+|6|Diagrama de classes dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Aline Nunes e Taniele|Programada|
+|6|Diagrama de interação/sequencia dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Thayliny|Programada|
+|6|Projeto de Interfaces gráficas dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Raquel e Thayliny|Programada|
+|6|Projeto de persistência dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Thayliny|Programada|
+|6|Implementação dos itens do backlog RF016, RF017*|09/11/2024|22/11/2024|Taniele e Stephany|Programada|
+|7|Especificação de estórias de usuários dos Item(ns) do backlog RF018|23/11/2024|06/12/2024|Aline Nunes|Programada|
+|7|Diagrama de classes dos Item(ns) do backlog RF018|23/11/2024|06/12/2024|Aline Nunes e Taniele|Programada|
+|7|Diagrama de interação/sequencia dos itens do backlog RF018|23/11/2024|06/12/2024|Raquel|Programada|
+|7|Projeto de Interfaces gráficas dos itens do backlog RF018|23/11/2024|06/12/2024|Aline Lima|Programada|
+|7|Projeto de persistência dos itens do backlog RF018|23/11/2024|06/12/2024|Thayliny|Programada|
+|7|Implementação dos itens do backlog RF018*|23/11/2024|06/12/2024|Aline Nunes e Stephany|Programada|
 |8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
 
