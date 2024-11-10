@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.registrovacina_frontend.app-debug-44:/drawable_ic_profile.png.flat",
+        "source": "com.example.registrovacina_frontend.app-main-46:/drawable/ic_profile.png"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.registrovacina_frontend.app-debug-44:/drawable_ic_plus.png.flat",
+        "source": "com.example.registrovacina_frontend.app-main-46:/drawable/ic_plus.png"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.registrovacina_frontend.app-debug-44:/drawable_ic_history.png.flat",
+        "source": "com.example.registrovacina_frontend.app-main-46:/drawable/ic_history.png"
+    },
+    {
+        "merged": "com.example.registrovacina_frontend.app-debug-44:/drawable_ic_calendar.png.flat",
+        "source": "com.example.registrovacina_frontend.app-main-46:/drawable/ic_calendar.png"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/xml_backup_rules.xml.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.registrovacina_frontend.app-debug-44:/drawable_ic_vaccine.png.flat",
+        "source": "com.example.registrovacina_frontend.app-main-46:/drawable/ic_vaccine.png"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.registrovacina_frontend.app-debug-44:/drawable_ic_home.png.flat",
+        "source": "com.example.registrovacina_frontend.app-main-46:/drawable/ic_home.png"
+    },
+    {
+        "merged": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/stephany/.gradle/daemon/8.7/com.example.registrovacina_frontend.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+    }
+]

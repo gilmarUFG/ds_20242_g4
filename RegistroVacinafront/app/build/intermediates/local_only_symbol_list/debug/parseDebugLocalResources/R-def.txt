@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_calendar
+drawable ic_history
+drawable ic_home
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_plus
+drawable ic_profile
+drawable ic_vaccine
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.RegistroVacinafront
+xml backup_rules
+xml data_extraction_rules
