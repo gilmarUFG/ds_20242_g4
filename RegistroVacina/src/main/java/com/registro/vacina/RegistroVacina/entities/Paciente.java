@@ -15,22 +15,22 @@ public class Paciente {
    private int id;
 
    @Column (name = "nome")
-   private char nome;
+   private String nome;
 
    @Column (name = "cpf")
-   private int cpf;
+   private String cpf;
 
    @Column (name = "cartaoSUS")
-   private int cartaoSUS;
+   private String cartaoSUS;
 
    @Column (name = "tipoComunicacao")
    private  String tipoComunicacao;
 
    @Column (name = "numTelefone")
-   private char numTelefone;
+   private String numTelefone;
 
    @Column (name = "eMail")
-   private char eMail;
+   private String eMail;
 
    public int getId() {
       return id;
@@ -40,27 +40,27 @@ public class Paciente {
       this.id = id;
    }
 
-   public char getNome() {
+   public String getNome() {
       return nome;
    }
 
-   public void setNome(char nome) {
+   public void setNome(String nome) {
       this.nome = nome;
    }
 
-   public int getCpf() {
+   public String getCpf() {
       return cpf;
    }
 
-   public void setCpf(int cpf) {
+   public void setCpf(String cpf) {
       this.cpf = cpf;
    }
 
-   public int getCartaoSUS() {
+   public String getCartaoSUS() {
       return cartaoSUS;
    }
 
-   public void setCartaoSUS(int cartaoSUS) {
+   public void setCartaoSUS(String cartaoSUS) {
       this.cartaoSUS = cartaoSUS;
    }
 
@@ -72,19 +72,19 @@ public class Paciente {
       this.tipoComunicacao = tipoComunicacao;
    }
 
-   public char getNumTelefone() {
+   public String getNumTelefone() {
       return numTelefone;
    }
 
-   public void setNumTelefone(char numTelefone) {
+   public void setNumTelefone(String numTelefone) {
       this.numTelefone = numTelefone;
    }
 
-   public char geteMail() {
+   public String geteMail() {
       return eMail;
    }
 
-   public void seteMail(char eMail) {
+   public void seteMail(String eMail) {
       this.eMail = eMail;
    }
 }

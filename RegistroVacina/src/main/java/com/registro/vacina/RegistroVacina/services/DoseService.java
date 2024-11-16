@@ -18,7 +18,5 @@ public class DoseService {
 
         Optional<Doses>retorno = doseRepository.findById(id);
         return retorno.get();
-
     }
-
 }

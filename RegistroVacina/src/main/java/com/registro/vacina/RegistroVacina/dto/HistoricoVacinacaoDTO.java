@@ -6,16 +6,13 @@ import java.util.Date;
 
 public class HistoricoVacinacaoDTO {
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private Date dataVacinacao;
-    private  String loteVacinacao;
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy")
+    private String loteVacinacao;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy")
     private Date anoVencimneto;
     private String quantidadeDoses;
     private String nomeVacina;
-
-
-
 
     public Date getDataVacinacao() {
         return dataVacinacao;
