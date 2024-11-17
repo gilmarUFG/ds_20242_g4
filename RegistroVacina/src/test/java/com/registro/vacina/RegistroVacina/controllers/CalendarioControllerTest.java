@@ -39,7 +39,6 @@ public class CalendarioControllerTest {
     void setUp() {
         calendarioDtos = new ArrayList<>();
 
-        // Setup fake CalendarioDto objects for the test
         CalendarioDto calendarioDto1 = new CalendarioDto();
         calendarioDto1.setCalendarioId(1);
         calendarioDto1.setCategoria("Categoria 1");
@@ -58,57 +57,49 @@ public class CalendarioControllerTest {
 
     @Test
     void consultaCalendario_DadosCorretos_RetornarCalendarios() throws Exception {
-        // Mock the behavior of the CalendarioService
         when(calendarioService.buscarCalendario(30)).thenReturn(calendarioDtos);
 
-        // Perform the GET request
         mockMvc.perform(get("/api/calendario/vacinacao")
-                .param("idade", "30"))
+                        .param("idade", "30"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(2))) // Verifica se o retorno tem 2 itens
                 .andExpect(jsonPath("$[0].calendarioId")
                         .value(1))
-                        .andExpect(jsonPath("$[0].categoria")
-                                .value("Categoria 1"))
-                                .andExpect(jsonPath("$[0].doses")
-                                        .value("2 doses"))
-                                        .andExpect(jsonPath("$[0].vacinas")
-                                                .value("Vacina A"))
-                                                .andExpect(jsonPath("$[1].calendarioId")
-                                                        .value(2))
-                                                        .andExpect(jsonPath("$[1].categoria").value("Categoria 2"))
-                                                        .andExpect(jsonPath("$[1].doses")
-                                                                .value("1 dose"))
-                                                                .andExpect(jsonPath("$[1].vacinas")
-                                                                        .value("Vacina B"));
+                .andExpect(jsonPath("$[0].categoria")
+                        .value("Categoria 1"))
+                .andExpect(jsonPath("$[0].doses")
+                        .value("2 doses"))
+                .andExpect(jsonPath("$[0].vacinas")
+                        .value("Vacina A"))
+                .andExpect(jsonPath("$[1].calendarioId")
+                        .value(2))
+                .andExpect(jsonPath("$[1].categoria").value("Categoria 2"))
+                .andExpect(jsonPath("$[1].doses")
+                        .value("1 dose"))
+                .andExpect(jsonPath("$[1].vacinas")
+                        .value("Vacina B"));
 
-        // Verify the service method was called
         verify(calendarioService, times(1)).buscarCalendario(30);
     }
 
     @Test
     void consultaCalendario_NaoEncontrarCalendarios_RetornarListaVazia() throws Exception {
-        // Mock the behavior of the CalendarioService to return an empty list
         when(calendarioService.buscarCalendario(10))
                 .thenReturn(new ArrayList<>());
 
-        // Perform the GET request
         mockMvc.perform(get("/api/calendario/vacinacao")
-                .param("idade", "10"))
+                        .param("idade", "10"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(0))); // Espera uma lista vazia
 
-        // Verify the service method was called
         verify(calendarioService, times(1)).buscarCalendario(10);
     }
 
     @Test
     void consultaCalendario_IdadeNaoInformadad_RetornarErro() throws Exception {
-        // Perform the GET request without age parameter
         mockMvc.perform(get("/api/calendario/vacinacao"))
-                .andExpect(status().isBadRequest()); // Espera um erro de bad request
+                .andExpect(status().isBadRequest());
 
-        // Verify that the service method was not called
         verify(calendarioService, never()).buscarCalendario(anyInt());
     }
 }

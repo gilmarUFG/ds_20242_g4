@@ -41,22 +41,20 @@ public class HistoricoVacinacaoControllerTest {
 
         List<HistoricoVacinacaoDTO> mockResponse = Arrays.asList(dto);
 
-        // Configuração do mock
         Mockito.when(historicoVacinacaoService.buscarHistoricoVacinacao(1, null, null))
                 .thenReturn(mockResponse);
 
-        // Execução do teste
         mockMvc.perform(get("/api/historico")
-                .param("pacienteId", "1"))
+                        .param("pacienteId", "1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].nomeVacina")
                         .value("Vacina Teste"))
-                        .andExpect(jsonPath("$[0].loteVacinacao")
-                                .value("12345"))
-                                .andExpect(jsonPath("$[0].quantidadeDoses")
-                                        .value("1"))
-                                        .andExpect(jsonPath("$[0].dataVacinacao")
-                                                .value("10/11/2023"));
+                .andExpect(jsonPath("$[0].loteVacinacao")
+                        .value("12345"))
+                .andExpect(jsonPath("$[0].quantidadeDoses")
+                        .value("1"))
+                .andExpect(jsonPath("$[0].dataVacinacao")
+                        .value("10/11/2023"));
     }
 
     @Test
@@ -71,28 +69,24 @@ public class HistoricoVacinacaoControllerTest {
 
         List<HistoricoVacinacaoDTO> mockResponse = Arrays.asList(dto);
 
-        // Configuração do mock
         Mockito.when(historicoVacinacaoService.buscarHistoricoVacinacao(1, "Vacina Filtrada", null))
                 .thenReturn(mockResponse);
 
-        // Execução do teste
         mockMvc.perform(get("/api/historico")
-                .param("pacienteId", "1")
-                .param("nomeVacina", "Vacina Filtrada"))
+                        .param("pacienteId", "1")
+                        .param("nomeVacina", "Vacina Filtrada"))
                 .andExpect(status().isOk()).andExpect(jsonPath("$[0].nomeVacina")
-                    .value("Vacina Filtrada"));
+                        .value("Vacina Filtrada"));
     }
 
     @Test
     public void consultaHistoricoVacinacao_SemResultados_RetornarListaVazia() throws Exception {
-        // Configuração do mock
         Mockito.when(historicoVacinacaoService.buscarHistoricoVacinacao(1, null, null))
                 .thenReturn(Collections.emptyList());
 
-        // Execução do teste
         mockMvc.perform(get("/api/historico").param("pacienteId", "1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$")
-                .isEmpty());
+                        .isEmpty());
     }
 }

@@ -29,63 +29,52 @@ public class PacienteControllerTest {
 
     @Test
     public void atualizarPreferenciaComunicacao_TipoValido_DeveRetornarOk() throws Exception {
-        // Arrange
         int pacienteId = 1;
         String tipoComunicacao = "EMAIL";
 
-        // Mock do comportamento do service
         doNothing().when(pacienteService).setPreferenciaComunicacao(eq(pacienteId), eq(TipoComunicacaoEnum.EMAIL));
 
-        // Act & Assert
         mockMvc.perform(put("/api/paciente/{id}/comunicacao", pacienteId)
-                .param("tipoComunicacao", tipoComunicacao))
+                        .param("tipoComunicacao", tipoComunicacao))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Preferência de comunicação atualizada com sucesso."));
     }
 
     @Test
     public void atualizarPreferenciaComunicacao_TipoInvalido_DeveRetornarBadRequest() throws Exception {
-        // Arrange
         int pacienteId = 1;
         String tipoComunicacao = "INVALIDO";
 
-        // Act & Assert
         mockMvc.perform(put("/api/paciente/{id}/comunicacao", pacienteId)
-                .param("tipoComunicacao", tipoComunicacao))
+                        .param("tipoComunicacao", tipoComunicacao))
                 .andExpect(status().isBadRequest())
                 .andExpect(content().string("Opção inválida. Valores permitidos: EMAIL, SMS, TELEFONE."));
     }
 
     @Test
     public void atualizarPreferenciaComunicacao_PacienteNaoEncontrado_DeveRetornarNotFound() throws Exception {
-        // Arrange
         int pacienteId = 99;
         String tipoComunicacao = "EMAIL";
 
-        // Mock do comportamento do service
         doThrow(new EntityNotFoundException("Paciente com ID " + pacienteId + " não encontrado."))
                 .when(pacienteService).setPreferenciaComunicacao(eq(pacienteId), eq(TipoComunicacaoEnum.EMAIL));
 
-        // Act & Assert
         mockMvc.perform(put("/api/paciente/{id}/comunicacao", pacienteId)
-                .param("tipoComunicacao", tipoComunicacao))
+                        .param("tipoComunicacao", tipoComunicacao))
                 .andExpect(status().isNotFound())
                 .andExpect(content().string("Paciente com ID " + pacienteId + " não encontrado."));
     }
 
     @Test
     public void atualizarPreferenciaComunicacao_ErroInterno_DeveRetornarInternalServerError() throws Exception {
-        // Arrange
         int pacienteId = 1;
         String tipoComunicacao = "EMAIL";
 
-        // Mock do comportamento do service
         doThrow(new RuntimeException("Erro genérico."))
                 .when(pacienteService).setPreferenciaComunicacao(eq(pacienteId), eq(TipoComunicacaoEnum.EMAIL));
 
-        // Act & Assert
         mockMvc.perform(put("/api/paciente/{id}/comunicacao", pacienteId)
-                .param("tipoComunicacao", tipoComunicacao))
+                        .param("tipoComunicacao", tipoComunicacao))
                 .andExpect(status().isInternalServerError())
                 .andExpect(content().string("Erro ao atualizar preferência de comunicação."));
     }
