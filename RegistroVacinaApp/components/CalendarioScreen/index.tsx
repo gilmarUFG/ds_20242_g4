@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   View,
   Text,
@@ -67,7 +67,7 @@ const CalendarioScreen = () => {
 
     return (
       <View style={styles.categoryScreen}>
-        <View style={styles.iconContainer}>
+        <View style={styles.categoryCard}>
           <Image
             source={getIconForCategory(category)}
             style={styles.categoryIcon}
@@ -124,7 +124,7 @@ const CalendarioScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#001F3F",
+    backgroundColor: "#FFFFFF",
   },
   header: {
     backgroundColor: "#0066cc",
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   categoryScreen: {
     flex: 1,
-    backgroundColor: "#001F3F",
+    backgroundColor: "#FFFFFF",
   },
   iconContainer: {
     alignItems: "center",
@@ -209,6 +209,18 @@ const styles = StyleSheet.create({
     color: "red",
     textAlign: "center",
     marginTop: 10,
+  },
+  categoryCard: {
+    backgroundColor: "#001F3F",
+    borderRadius: 15,
+    padding: 20,
+    margin: 20,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
 });
 
