@@ -86,13 +86,6 @@ const CalendarioScreen = () => {
             </View>
           ))}
         </ScrollView>
-
-        <View style={styles.bottomNav}>
-          <Image
-            source={require("../../assets/images/bottom_nav.png")}
-            style={styles.bottomNavImage}
-          />
-        </View>
       </View>
     );
   };
