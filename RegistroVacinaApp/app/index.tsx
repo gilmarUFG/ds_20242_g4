@@ -15,19 +15,20 @@ const HomeScreen = () => {
         />
         <Text style={styles.headerText}>Vacinação</Text>
       </View>
+      <View style={styles.buttons}>
+        {/* Calendário Button */}
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push("/calendario")}
+        >
+          <Image
+            source={require("../assets/images/calendario.png")}
+            style={styles.image}
+          />
+        </TouchableOpacity>
 
-      {/* Calendário Button */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => router.push("/calendario")}
-      >
-        <Image
-          source={require("../assets/images/calendario.png")}
-          style={styles.image}
-        />
-      </TouchableOpacity>
-
-      <Text style={styles.buttonText}>Calendário</Text>
+        <Text style={styles.buttonText}>Calendário</Text>
+      </View>
     </View>
   );
 };
@@ -35,18 +36,16 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    padding: 10,
+    backgroundColor: "#FFFFFF",
+    paddingTop: 20,
   },
   header: {
-    width: "100%",
-    flexDirection: "row",
-    alignItems: "start",
-    justifyContent: "center",
     backgroundColor: "#0066cc",
     paddingVertical: 20,
+    paddingHorizontal: 10,
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 20,
-    borderRadius: 10,
   },
   headerImage: {
     width: 40,
@@ -57,6 +56,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     color: "#fff",
+  },
+  buttons: {
+    padding: 20,
   },
   button: {
     alignItems: "center",
