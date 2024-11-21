@@ -1,4 +1,3 @@
-import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 
@@ -28,6 +27,19 @@ const HomeScreen = () => {
         </TouchableOpacity>
 
         <Text style={styles.buttonText}>Calendário</Text>
+      </View>
+      <View style={styles.buttons}>
+        {/* Histórico Button */}
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push("/historico")}
+        >
+          <Image
+            source={require("../assets/images/historico.png")}
+            style={styles.image}
+          />
+          <Text style={styles.buttonText}>Histórico</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
