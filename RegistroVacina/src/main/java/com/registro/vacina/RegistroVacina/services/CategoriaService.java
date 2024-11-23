@@ -13,13 +13,9 @@ public class CategoriaService {
     @Autowired
     private CategoriaRepository categoriaRepository;
 
-
     public Categoria buscarCategoriaId(int id)
     {
         Optional<Categoria>retorno = categoriaRepository.findById(id);
         return retorno.get();
     }
-
-
-
 }

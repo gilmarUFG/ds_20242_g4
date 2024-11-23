@@ -2,7 +2,6 @@ package com.registro.vacina.RegistroVacina.controllers;
 
 
 import com.registro.vacina.RegistroVacina.dto.HistoricoVacinacaoDTO;
-import com.registro.vacina.RegistroVacina.entities.HistoricoVacinacao;
 import com.registro.vacina.RegistroVacina.services.HistoricoVacinacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -23,7 +20,7 @@ public class HistoricoVacinacaoController {
 
 
     @GetMapping("/historico")
-    public List<HistoricoVacinacaoDTO> consultaGistoricoVacinacao(@RequestParam int pacienteId, @RequestParam(required = false) String nomeVacina, @RequestParam(required = false)  String dataVacinacao) {
+    public List<HistoricoVacinacaoDTO> consultaHistoricoVacinacao(@RequestParam int pacienteId, @RequestParam(required = false) String nomeVacina, @RequestParam(required = false)  String dataVacinacao) {
         return historicoVacinacaoService.buscarHistoricoVacinacao(pacienteId, nomeVacina, dataVacinacao);
 
     }
