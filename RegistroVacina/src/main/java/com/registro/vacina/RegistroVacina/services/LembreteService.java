@@ -9,7 +9,7 @@ import com.registro.vacina.RegistroVacina.repositories.VacinaRepository;
 import com.registro.vacina.RegistroVacina.services.envioNotificacao.AppNotificationSender;
 import com.registro.vacina.RegistroVacina.services.envioNotificacao.EmailNotificationSender;
 import com.registro.vacina.RegistroVacina.services.envioNotificacao.SMSNotificationSender;
-import org.jetbrains.annotations.NotNull;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
