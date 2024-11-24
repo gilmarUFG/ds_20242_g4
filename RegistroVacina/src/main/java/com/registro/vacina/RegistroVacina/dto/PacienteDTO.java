@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class PacienteDTO {
 
-    private  String nome;
+    private String nome;
     private Date dataNascimento;
     private String cpf;
     private String cartaoSUS;
