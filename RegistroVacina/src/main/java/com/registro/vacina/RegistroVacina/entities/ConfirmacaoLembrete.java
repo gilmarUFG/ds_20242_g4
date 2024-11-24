@@ -1,13 +1,8 @@
 package com.registro.vacina.RegistroVacina.entities;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "confirmacao_lembrete")
@@ -15,39 +10,42 @@ public class ConfirmacaoLembrete {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id; // Gerado automaticamente pelo banco de dados
 
+    @NotNull // Obrigatório
     @Column(name = "lembrete_id")
-    private int lembreteId;
+    private Integer lembreteId;
 
-    @Column(name = "paciente_id")
-    private int pacienteId;
+    @NotNull // Obrigatório
+    @Column(name = "usuario")
+    private String usuario; // CPF do paciente
 
     @Column(name = "data_confirmacao")
-    private LocalDateTime dataConfirmacao;
+    private LocalDateTime dataConfirmacao; // Não obrigatório
 
-    public int getId() {
+    // Getters e Setters
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getLembreteId() {
+    public Integer getLembreteId() {
         return lembreteId;
     }
 
-    public void setLembreteId(int lembreteId) {
+    public void setLembreteId(Integer lembreteId) {
         this.lembreteId = lembreteId;
     }
 
-    public int getPacienteId() {
-        return pacienteId;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setPacienteId(int pacienteId) {
-        this.pacienteId = pacienteId;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public LocalDateTime getDataConfirmacao() {
@@ -58,4 +56,3 @@ public class ConfirmacaoLembrete {
         this.dataConfirmacao = dataConfirmacao;
     }
 }
-

@@ -1,37 +1,53 @@
 package com.registro.vacina.RegistroVacina.services;
 
-
-import com.registro.vacina.RegistroVacina.repositories.ConfirmacaoLembreteRepository;
-import java.time.LocalDateTime;
-import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
-
+import com.registro.vacina.RegistroVacina.dto.ConfirmacaoLembreteDTO;
 import com.registro.vacina.RegistroVacina.entities.ConfirmacaoLembrete;
 import com.registro.vacina.RegistroVacina.repositories.ConfirmacaoLembreteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ConfirmacaoLembreteService {
 
-    private final ConfirmacaoLembreteRepository confirmacaoLembreteRepository;
+    @Autowired
+    private ConfirmacaoLembreteRepository confirmacaoLembreteRepository;
 
-    // Injeção de dependência via construtor
-    public ConfirmacaoLembreteService(ConfirmacaoLembreteRepository confirmacaoLembreteRepository) {
-        this.confirmacaoLembreteRepository = confirmacaoLembreteRepository;
+    public List<ConfirmacaoLembrete> buscarTodos() {
+        return confirmacaoLembreteRepository.findAll();
     }
 
-    // Método para confirmar o recebimento do lembrete
-    public ConfirmacaoLembrete confirmarRecebimento(int lembreteId, int pacienteId) {
-        // Validações de entrada
-        Assert.isTrue(lembreteId > 0, "O ID do lembrete deve ser maior que zero.");
-        Assert.isTrue(pacienteId > 0, "O ID do paciente deve ser maior que zero.");
+    public Optional<ConfirmacaoLembrete> buscarPorId(Integer id) {
+        return confirmacaoLembreteRepository.findById(id);
+    }
 
-        // Criação do objeto de confirmação
-        ConfirmacaoLembrete confirmacao = new ConfirmacaoLembrete();
-        confirmacao.setLembreteId(lembreteId);
-        confirmacao.setPacienteId(pacienteId);
-        confirmacao.setDataConfirmacao(LocalDateTime.now());
+    public ConfirmacaoLembrete criarConfirmacao(ConfirmacaoLembreteDTO confirmacaoLembreteDTO) {
+        ConfirmacaoLembrete confirmacaoLembrete = new ConfirmacaoLembrete();
+        confirmacaoLembrete.setLembreteId(confirmacaoLembreteDTO.getLembreteId());
+        confirmacaoLembrete.setUsuario(confirmacaoLembreteDTO.getUsuario());
+        confirmacaoLembrete.setDataConfirmacao(LocalDateTime.now()); // Define a data de confirmação como o momento atual
+        return confirmacaoLembreteRepository.save(confirmacaoLembrete);
+    }
 
-        // Salvando no repositório
-        return confirmacaoLembreteRepository.save(confirmacao);
+    public ConfirmacaoLembrete atualizarConfirmacao(Integer id, ConfirmacaoLembreteDTO confirmacaoAtualizadaDTO) {
+        Optional<ConfirmacaoLembrete> confirmacaoExistente = confirmacaoLembreteRepository.findById(id);
+        if (confirmacaoExistente.isPresent()) {
+            ConfirmacaoLembrete confirmacao = confirmacaoExistente.get();
+            confirmacao.setLembreteId(confirmacaoAtualizadaDTO.getLembreteId());
+            confirmacao.setUsuario(confirmacaoAtualizadaDTO.getUsuario());
+            confirmacao.setDataConfirmacao(
+                    confirmacaoAtualizadaDTO.getDataConfirmacao() != null ?
+                            LocalDateTime.parse(confirmacaoAtualizadaDTO.getDataConfirmacao()) : confirmacao.getDataConfirmacao());
+            return confirmacaoLembreteRepository.save(confirmacao);
+        } else {
+            throw new RuntimeException("Confirmação não encontrada com ID: " + id);
+        }
+    }
+
+    public void deletarConfirmacao(Integer id) {
+        confirmacaoLembreteRepository.deleteById(id);
     }
 }

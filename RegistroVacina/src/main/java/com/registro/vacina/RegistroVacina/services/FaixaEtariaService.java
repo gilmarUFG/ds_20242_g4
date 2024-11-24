@@ -1,7 +1,6 @@
 package com.registro.vacina.RegistroVacina.services;
 
 
-import com.registro.vacina.RegistroVacina.entities.Categoria;
 import com.registro.vacina.RegistroVacina.entities.FaixaEtaria;
 import com.registro.vacina.RegistroVacina.repositories.FaixaEtariaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
