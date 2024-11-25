@@ -14,32 +14,34 @@ const HomeScreen = () => {
         />
         <Text style={styles.headerText}>Vacinação</Text>
       </View>
-      <View style={styles.buttons}>
+      {/* Botões lado a lado */}
+      <View style={styles.buttonRow}>
         {/* Calendário Button */}
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => router.push("/calendario")}
-        >
-          <Image
-            source={require("../assets/images/calendario.png")}
-            style={styles.image}
-          />
-        </TouchableOpacity>
-
-        <Text style={styles.buttonText}>Calendário</Text>
-      </View>
-      <View style={styles.buttons}>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push("/calendario")}
+          >
+            <Image
+              source={require("../assets/images/calendario.png")}
+              style={styles.image}
+            />
+          </TouchableOpacity>
+          <Text style={styles.buttonText}>Calendário</Text>
+        </View>
         {/* Histórico Button */}
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => router.push("/historico")}
-        >
-          <Image
-            source={require("../assets/images/historico.png")}
-            style={styles.image}
-          />
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push("/historico")}
+          >
+            <Image
+              source={require("../assets/images/historico.png")}
+              style={styles.image}
+            />
+          </TouchableOpacity>
           <Text style={styles.buttonText}>Histórico</Text>
-        </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -69,8 +71,14 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#fff",
   },
-  buttons: {
-    padding: 20,
+  buttonRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingHorizontal: 20,
+    marginTop: 20,
+  },
+  buttonContainer: {
+    alignItems: "center",
   },
   button: {
     alignItems: "center",
