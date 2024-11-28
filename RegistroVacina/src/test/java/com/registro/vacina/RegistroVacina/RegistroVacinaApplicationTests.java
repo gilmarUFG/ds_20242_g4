@@ -9,5 +9,4 @@ class RegistroVacinaApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
