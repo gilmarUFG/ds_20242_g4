@@ -16,7 +16,7 @@ public class LembreteVacinaScheduler {
         try {
             lembreteVacinaService.enviarLembretes();
         } catch(Exception e) {
-            // Tratar exceções de envio, caso necessário
+            // Tratar exceções de envio
             System.err.println("Erro ao enviar lembretes: " + e.getMessage());
         }
     }

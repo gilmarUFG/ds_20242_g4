@@ -89,5 +89,3 @@ public class HistoricoVacinacao {
         this.vacina = vacina;
     }
 }
-
-
