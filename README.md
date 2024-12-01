@@ -117,10 +117,10 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
 |2|Preparação|14/09/2024|27/09/2024|Grupo|Concluída|
-|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Programada|
+|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Concluída|
+|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Concluída|
+|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Concluída|
+|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Concluída|
 |7|Item(ns) do backlog RF018|23/11/2024|06/12/2024|Grupo|Programada|
 |8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
