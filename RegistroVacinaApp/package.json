@@ -14,13 +14,16 @@
   "jest": {
     "preset": "jest-expo"
   },
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/native": "^6.0.2",
     "axios": "^1.7.7",
+    "expo": "^52.0.7",
     "expo-constants": "~16.0.2",
     "expo-font": "~12.0.9",
     "expo-linking": "~6.3.1",
+    "expo-router": "^4.0.6",
     "expo-splash-screen": "~0.27.5",
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.7",
@@ -31,7 +34,7 @@
     "react-native-gesture-handler": "~2.16.1",
     "react-native-reanimated": "~3.10.1",
     "react-native-safe-area-context": "4.10.5",
-    "react-native-screens": "3.31.1",
+    "react-native-screens": "^4.1.0",
     "react-native-web": "~0.19.10"
   },
   "devDependencies": {

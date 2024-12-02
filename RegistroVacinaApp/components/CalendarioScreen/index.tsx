@@ -67,7 +67,7 @@ const CalendarioScreen = () => {
 
     return (
       <View style={styles.categoryScreen}>
-        <View style={styles.iconContainer}>
+        <View style={styles.categoryCard}>
           <Image
             source={getIconForCategory(category)}
             style={styles.categoryIcon}
@@ -86,13 +86,6 @@ const CalendarioScreen = () => {
             </View>
           ))}
         </ScrollView>
-
-        <View style={styles.bottomNav}>
-          <Image
-            source={require("../../assets/images/bottom_nav.png")}
-            style={styles.bottomNavImage}
-          />
-        </View>
       </View>
     );
   };
@@ -119,7 +112,7 @@ const CalendarioScreen = () => {
           <Button title="Buscar Calendário" onPress={buscarCalendario} />
 
           {isLoading && <Text>Carregando...</Text>}
-          {error && <Text style={styles.errorText}>Erro: {error}</Text>}
+          {!!error && <Text style={styles.errorText}>Erro: {error}</Text>}
         </>
       ) : (
         renderCategoryScreen(activeCategory)
@@ -131,7 +124,8 @@ const CalendarioScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#001F3F",
+    backgroundColor: "#FFFFFF",
+    paddingTop: 20,
   },
   header: {
     backgroundColor: "#0066cc",
@@ -163,7 +157,7 @@ const styles = StyleSheet.create({
   },
   categoryScreen: {
     flex: 1,
-    backgroundColor: "#001F3F",
+    backgroundColor: "#FFFFFF",
   },
   iconContainer: {
     alignItems: "center",
@@ -216,6 +210,18 @@ const styles = StyleSheet.create({
     color: "red",
     textAlign: "center",
     marginTop: 10,
+  },
+  categoryCard: {
+    backgroundColor: "#001F3F",
+    borderRadius: 15,
+    padding: 20,
+    margin: 20,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
 });
 
