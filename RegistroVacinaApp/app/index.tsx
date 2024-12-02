@@ -1,9 +1,21 @@
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
+import React, { useEffect } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const HomeScreen = () => {
   const router = useRouter();
-
+/*
+  useEffect(() => {
+    const checkLogin = async () => {
+      const isLoggedIn = await AsyncStorage.getItem("isLoggedIn");
+      if (!isLoggedIn) {
+        router.replace("/login");
+      }
+    };
+    checkLogin();
+  }, []);
+  */
   return (
     <View style={styles.container}>
       {/* Header */}

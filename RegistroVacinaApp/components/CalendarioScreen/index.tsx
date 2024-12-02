@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -112,7 +112,7 @@ const CalendarioScreen = () => {
           <Button title="Buscar Calendário" onPress={buscarCalendario} />
 
           {isLoading && <Text>Carregando...</Text>}
-          {error && <Text style={styles.errorText}>Erro: {error}</Text>}
+          {!!error && <Text style={styles.errorText}>Erro: {error}</Text>}
         </>
       ) : (
         renderCategoryScreen(activeCategory)

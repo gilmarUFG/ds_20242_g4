@@ -82,7 +82,7 @@ const HistoricoScreen = () => {
       <Button title="Buscar com Filtros" onPress={buscarHistoricoComFiltros} />
 
       {isLoading && <Text>Carregando...</Text>}
-      {error && <Text style={styles.errorText}>Erro: {error}</Text>}
+      {!!error && <Text style={styles.errorText}>Erro: {error}</Text>}
 
       <ScrollView style={styles.historyList}>
         {historico.map((item: any) => (
@@ -100,16 +100,16 @@ const HistoricoScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    padding: 20,
+    backgroundColor: "#FFFFFF",
+    paddingTop: 20,
   },
   header: {
     backgroundColor: "#0066cc",
     paddingVertical: 20,
+    paddingHorizontal: 10,
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 20,
-    borderRadius: 10,
   },
   headerImage: {
     width: 40,
