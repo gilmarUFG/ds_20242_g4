@@ -1,7 +1,5 @@
 package com.registro.vacina.RegistroVacina.services;
 
-
-
 import com.registro.vacina.RegistroVacina.entities.Vacina;
 import com.registro.vacina.RegistroVacina.repositories.VacinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +19,4 @@ public class VacinaService {
         return retorno.get();
 
     }
-
 }

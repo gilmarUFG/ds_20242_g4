@@ -20,5 +20,4 @@ public class FaixaEtariaService {
         Optional<FaixaEtaria> retorno = faixaEtariaRepository.findById(id);;
         return retorno.get();
     }
-
 }

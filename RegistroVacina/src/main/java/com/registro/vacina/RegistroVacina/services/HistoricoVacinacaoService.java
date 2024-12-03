@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
+import java.util.Objects;
 
 @Service
 public class HistoricoVacinacaoService {
@@ -29,30 +29,28 @@ public class HistoricoVacinacaoService {
 
     public List<HistoricoVacinacaoDTO> buscarHistoricoVacinacao(int pacienteId, String nomeVacina, String dataVacinacao) {
 
-            List<HistoricoVacinacao> retorno = historicoVacinacaoRepository.findByPacienteId(pacienteId);
-            List<HistoricoVacinacaoDTO> novoHistoricoVacinacao = new ArrayList<>(); // Criação de Lista
+        List<HistoricoVacinacao> retorno = historicoVacinacaoRepository.findByPacienteId(pacienteId);
+        List<HistoricoVacinacaoDTO> novoHistoricoVacinacao = new ArrayList<>(); // Criação de Lista
 
 
         // Filtro
 
-        for (HistoricoVacinacao h : retorno) {
+        for(HistoricoVacinacao h : retorno) {
 
             Doses doses = doseService.buscarDosesId(h.getDose());
             Vacina vacina = vacinaService.buscarVacina(h.getVacina());
 
-            if(nomeVacina != null){
-                if(!nomeVacina.equals(vacina.getNomeVacina())){
+            if(nomeVacina != null) {
+                if(!nomeVacina.equals(vacina.getNomeVacina())) {
                     continue;
                 }
             }
 
-            if(dataVacinacao != null)
-            {
-                if(!converterDataUSA(dataVacinacao).equals(formatarData(h.getDataVacinacao()))){
+            if(dataVacinacao != null) {
+                if(!Objects.equals(converterDataUSA(dataVacinacao), formatarData(h.getDataVacinacao()))) {
                     continue;
                 }
             }
-
 
 
             HistoricoVacinacaoDTO historicoVacinacaoDTO = new HistoricoVacinacaoDTO();
@@ -63,12 +61,10 @@ public class HistoricoVacinacaoService {
             historicoVacinacaoDTO.setNomeVacina(vacina.getNomeVacina());
 
 
-
             novoHistoricoVacinacao.add(historicoVacinacaoDTO);
 
 
         }
-
 
 
         return novoHistoricoVacinacao;
@@ -88,7 +84,7 @@ public class HistoricoVacinacaoService {
 
             // Retorna a data convertida
             return formatoUSA.parse(dataFormatada);
-        } catch (ParseException e) {
+        } catch(ParseException e) {
             e.printStackTrace();
             return null; // ou lançar uma exceção
         }
@@ -104,7 +100,7 @@ public class HistoricoVacinacaoService {
         try {
             // Converte a string de volta para um objeto Date
             return formato.parse(dataFormatada);
-        } catch (ParseException e) {
+        } catch(ParseException e) {
             e.printStackTrace();
             return null; // ou lançar uma exceção
         }

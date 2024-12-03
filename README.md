@@ -38,7 +38,7 @@ Este projeto será desenvolvido pelos componentes do grupo 4:
 1. RF001 - O sistema deve ser capaz de sincronizar automaticamente os dados de vacinação do cidadão com o SUS sempre que uma nova vacina for registrada no sistema local. A sincronização deve ocorrer em tempo real ou em intervalos regulares, garantindo que o histórico de vacinação do cidadão esteja sempre atualizado no sistema do SUS.
 2. RF002 - O sistema deve enviar notificações ao cidadão sempre que seus dados de vacinação forem sincronizados com sucesso. As notificações devem ser enviadas via SMS, e-mail ou aplicativo, conforme a preferência do usuário. O sistema também deve permitir que o cidadão desative essas notificações através das configurações de notificação.
 3. RF003 - O sistema deve permitir que o cidadão consulte seu histórico de vacinação sincronizado com o SUS. A consulta deve exibir uma lista completa e atualizada de todas as vacinas administradas. O sistema deve oferecer opções de filtro por tipo de vacina e data, e deve informar o cidadão sobre qualquer ausência de dados devido a falhas na sincronização.
-4. RF004 - O sistema deve permitir que profissionais de saúde autenticados consultem o histórico completo de vacinação de um cidadão, utilizando o CPF ou Cartão SUS como identificador. O histórico exibido deve incluir todas as vacinas aplicadas, com detalhes como a data de aplicação, lote da vacina e a validade de cada imunização.
+4. RF004 - O sistema deve permitir que profissionais de saúde autenticados consultem o histórico completo de vacinação de um cidadão, utilizando o CPF como identificador. O histórico exibido deve incluir todas as vacinas aplicadas, com detalhes como a data de aplicação, lote da vacina e a validade de cada imunização.
 5. RF005 - O sistema deve permitir que profissionais de saúde consultem as vacinas pendentes ou que necessitem de reforço para um cidadão. Essas informações devem ser destacadas no histórico de vacinação, com datas recomendadas para a aplicação das doses pendentes ou reforços, baseadas na faixa etária e no calendário nacional de vacinação.
 6. RF006 - O sistema deve comunicar com bases de dados do Múnicio e Estado para importação de informação do usúario para o SUS.
 7. RF007 -O sistema deve permitir ao usúario visualizar de onde suas informações estão sendo importadas e o status de cada importação ( Andamento, Concluída, Falha).
@@ -116,11 +116,11 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Preparação|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Programada|
+|2|Preparação|14/09/2024|27/09/2024|Grupo|Concluída|
+|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Concluída|
+|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Concluída|
+|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Concluída|
+|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Concluída|
 |7|Item(ns) do backlog RF018|23/11/2024|06/12/2024|Grupo|Programada|
 |8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
@@ -130,10 +130,10 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |---|---|---|---|---|---|
 |1|Definição do grupo de trabalho|30/08/2024|30/08/2024|Grupo|Concluída|
 |1|Definição do Tema do Trabalho|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Definição do Backlog do produto|13/09/2024|27/09/2024|Grupo|Programada|
-|2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
-|2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
-|2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
+|2|Definição do Backlog do produto|13/09/2024|27/09/2024|Grupo|Concluída|
+|2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Concluída|
+|2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Concluída|
+|2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Concluída|
 |3|Especificação de estórias de usuários dos Item(ns) do backlog RF014|28/09/2024|11/10/2024| Aline Nunes|Programada|
 |3|Diagrama de classes dos Item(ns) do backlog RF014|28/09/2024|11/10/2024|Aline Nunes e Taniele|Programada|
 |3|Diagrama de interação/sequencia dos itens do backlog RF014|28/09/2024|11/10/2024| Stephany|Programada|
