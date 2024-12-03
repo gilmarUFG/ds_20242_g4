@@ -122,7 +122,7 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Concluída|
 |6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Concluída|
 |7|Item(ns) do backlog RF018|23/11/2024|06/12/2024|Grupo|Concluída|
-|8|Apresentação do Projeto|06/12/2024|20/12/2024|Grupo|Programada|
+|8|Apresentação do Projeto|06/12/2024|06/12/2024|Grupo|Programada|
 
 
 ### Iterações x Atividades
@@ -164,7 +164,7 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |7|Projeto de Interfaces gráficas dos itens do backlog RF018|23/11/2024|06/12/2024|Aline Lima|Concluída|
 |7|Projeto de persistência dos itens do backlog RF018|23/11/2024|06/12/2024|Thayliny|Concluída|
 |7|Implementação dos itens do backlog RF018*|23/11/2024|05/12/2024|Aline Nunes e Stephany|Programada|
-|8|Apresentação do Projeto|07/12/2024|06/12/2024|Grupo|Programada|
+|8|Apresentação do Projeto|06/12/2024|06/12/2024|Grupo|Programada|
 
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
