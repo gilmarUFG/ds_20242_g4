@@ -1,10 +1,21 @@
-import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
+import React, { useEffect } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const HomeScreen = () => {
   const router = useRouter();
-
+/*
+  useEffect(() => {
+    const checkLogin = async () => {
+      const isLoggedIn = await AsyncStorage.getItem("isLoggedIn");
+      if (!isLoggedIn) {
+        router.replace("/login");
+      }
+    };
+    checkLogin();
+  }, []);
+  */
   return (
     <View style={styles.container}>
       {/* Header */}
@@ -15,19 +26,35 @@ const HomeScreen = () => {
         />
         <Text style={styles.headerText}>Vacinação</Text>
       </View>
-
-      {/* Calendário Button */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => router.push("/calendario")}
-      >
-        <Image
-          source={require("../assets/images/calendario.png")}
-          style={styles.image}
-        />
-      </TouchableOpacity>
-
-      <Text style={styles.buttonText}>Calendário</Text>
+      {/* Botões lado a lado */}
+      <View style={styles.buttonRow}>
+        {/* Calendário Button */}
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push("/calendario")}
+          >
+            <Image
+              source={require("../assets/images/calendario.png")}
+              style={styles.image}
+            />
+          </TouchableOpacity>
+          <Text style={styles.buttonText}>Calendário</Text>
+        </View>
+        {/* Histórico Button */}
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push("/historico")}
+          >
+            <Image
+              source={require("../assets/images/historico.png")}
+              style={styles.image}
+            />
+          </TouchableOpacity>
+          <Text style={styles.buttonText}>Histórico</Text>
+        </View>
+      </View>
     </View>
   );
 };
@@ -35,18 +62,16 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    padding: 10,
+    backgroundColor: "#FFFFFF",
+    paddingTop: 20,
   },
   header: {
-    width: "100%",
-    flexDirection: "row",
-    alignItems: "start",
-    justifyContent: "center",
     backgroundColor: "#0066cc",
     paddingVertical: 20,
+    paddingHorizontal: 10,
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 20,
-    borderRadius: 10,
   },
   headerImage: {
     width: 40,
@@ -57,6 +82,15 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     color: "#fff",
+  },
+  buttonRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingHorizontal: 20,
+    marginTop: 20,
+  },
+  buttonContainer: {
+    alignItems: "center",
   },
   button: {
     alignItems: "center",

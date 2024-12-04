@@ -117,12 +117,12 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
 |2|Preparação|14/09/2024|27/09/2024|Grupo|Concluída|
-|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Item(ns) do backlog RF018|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|3|Item(ns) do backlog RF014|28/09/2024|11/10/2024|Grupo|Concluída|
+|4|Item(ns) do backlog RF003|12/10/2024|25/10/2024|Grupo|Concluída|
+|5|Item(ns) do backlog RF004|26/10/2024|08/11/2024|Grupo|Concluída|
+|6|Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Grupo|Concluída|
+|7|Item(ns) do backlog RF018|23/11/2024|06/12/2024|Grupo|Concluída|
+|8|Apresentação do Projeto|06/12/2024|06/12/2024|Grupo|Programada|
 
 
 ### Iterações x Atividades
@@ -134,37 +134,37 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Concluída|
 |2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Concluída|
 |2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Concluída|
-|3|Especificação de estórias de usuários dos Item(ns) do backlog RF014|28/09/2024|11/10/2024| Aline Nunes|Programada|
-|3|Diagrama de classes dos Item(ns) do backlog RF014|28/09/2024|11/10/2024|Aline Nunes e Taniele|Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog RF014|28/09/2024|11/10/2024| Stephany|Programada|
-|3|Projeto de Interfaces gráficas dos itens do backlog RF014|28/09/2024|11/10/2024|Aline Lima, Raquel e Stephany|Programada|
-|3|Projeto de persistência dos itens do backlog RF014|28/09/2024|11/10/2024|Thayliny|Programada|
-|3|Implementação dos itens do backlog RF014*|28/09/2024|11/10/2024|Stephany e Thayliny|Programada|
-|4|Especificação de estórias de usuários dos Item(ns) do backlog RF003|12/10/2024|25/10/2024|Stephany|Programada|
-|4|Diagrama de classes dos Item(ns) do backlog RF003|12/10/2024|25/10/2024|Aline Nunes e Taniele|Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog RF003|12/10/2024|25/10/2024|Stephany|Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog RF003|12/10/2024|25/10/2024|Aline Lima e Raquel|Programada|
-|4|Projeto de persistência dos itens do backlog RF003|12/10/2024|25/10/2024|Raquel e Thayliny|Programada|
-|4|Implementação dos itens do backlog RF003*|12/10/2024|25/10/2024|Raquel, Stephany e Thayliny|Programada|
-|5|Especificação de estórias de usuários dos Item(ns) do backlog RF004|26/10/2024|08/11/2024|Raquel|Programada|
-|5|Diagrama de classes dos Item(ns) do backlog RF004|26/10/2024|08/11/2024|Aline Nunes e Taniele|Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog RF004|26/10/2024|08/11/2024|Thayliny|Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog RF004|26/10/2024|08/11/2024|Aline Lima e Raquel|Programada|
-|5|Projeto de persistência dos itens do backlog RF004|26/10/2024|08/11/2024|Thayliny|Programada|
-|5|Implementação dos itens do backlog RF004*|26/10/2024|08/11/2024|Aline Lima e Stephany|Programada|
-|6|Especificação de estórias de usuários dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Aline Nunes|Programada|
-|6|Diagrama de classes dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Aline Nunes e Taniele|Programada|
-|6|Diagrama de interação/sequencia dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Thayliny|Programada|
-|6|Projeto de Interfaces gráficas dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Raquel e Thayliny|Programada|
-|6|Projeto de persistência dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Thayliny|Programada|
-|6|Implementação dos itens do backlog RF016, RF017*|09/11/2024|22/11/2024|Taniele e Stephany|Programada|
-|7|Especificação de estórias de usuários dos Item(ns) do backlog RF018|23/11/2024|06/12/2024|Aline Nunes|Programada|
-|7|Diagrama de classes dos Item(ns) do backlog RF018|23/11/2024|06/12/2024|Aline Nunes e Taniele|Programada|
-|7|Diagrama de interação/sequencia dos itens do backlog RF018|23/11/2024|06/12/2024|Raquel|Programada|
-|7|Projeto de Interfaces gráficas dos itens do backlog RF018|23/11/2024|06/12/2024|Aline Lima|Programada|
-|7|Projeto de persistência dos itens do backlog RF018|23/11/2024|06/12/2024|Thayliny|Programada|
-|7|Implementação dos itens do backlog RF018*|23/11/2024|06/12/2024|Aline Nunes e Stephany|Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|3|Especificação de estórias de usuários dos Item(ns) do backlog RF014|28/09/2024|11/10/2024| Aline Nunes|Concluída|
+|3|Diagrama de classes dos Item(ns) do backlog RF014|28/09/2024|11/10/2024|Aline Nunes e Taniele|Concluída|
+|3|Diagrama de interação/sequencia dos itens do backlog RF014|28/09/2024|11/10/2024| Stephany|Concluída|
+|3|Projeto de Interfaces gráficas dos itens do backlog RF014|28/09/2024|11/10/2024|Aline Lima, Raquel e Stephany|Concluída|
+|3|Projeto de persistência dos itens do backlog RF014|28/09/2024|11/10/2024|Thayliny|Concluída|
+|3|Implementação dos itens do backlog RF014*|28/09/2024|11/10/2024|Stephany e Thayliny|Concluída|
+|4|Especificação de estórias de usuários dos Item(ns) do backlog RF003|12/10/2024|25/10/2024|Stephany|Concluída|
+|4|Diagrama de classes dos Item(ns) do backlog RF003|12/10/2024|25/10/2024|Aline Nunes e Taniele|Concluída|
+|4|Diagrama de interação/sequencia dos itens do backlog RF003|12/10/2024|25/10/2024|Stephany|Concluída|
+|4|Projeto de Interfaces gráficas dos itens do backlog RF003|12/10/2024|25/10/2024|Aline Lima e Raquel|Concluída|
+|4|Projeto de persistência dos itens do backlog RF003|12/10/2024|25/10/2024|Raquel e Thayliny|Concluída|
+|4|Implementação dos itens do backlog RF003*|12/10/2024|25/10/2024|Raquel, Stephany e Thayliny|Concluída|
+|5|Especificação de estórias de usuários dos Item(ns) do backlog RF004|26/10/2024|08/11/2024|Raquel|Concluída|
+|5|Diagrama de classes dos Item(ns) do backlog RF004|26/10/2024|08/11/2024|Aline Nunes e Taniele|Concluída|
+|5|Diagrama de interação/sequencia dos itens do backlog RF004|26/10/2024|08/11/2024|Thayliny|Concluída|
+|5|Projeto de Interfaces gráficas dos itens do backlog RF004|26/10/2024|08/11/2024|Aline Lima e Raquel|Concluída|
+|5|Projeto de persistência dos itens do backlog RF004|26/10/2024|08/11/2024|Thayliny|Concluída|
+|5|Implementação dos itens do backlog RF004*|26/10/2024|08/11/2024|Aline Lima e Stephany|Concluída|
+|6|Especificação de estórias de usuários dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Aline Nunes|Concluída|
+|6|Diagrama de classes dos Item(ns) do backlog RF016, RF017|09/11/2024|22/11/2024|Aline Nunes e Taniele|Concluída|
+|6|Diagrama de interação/sequencia dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Thayliny|Concluída|
+|6|Projeto de Interfaces gráficas dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Raquel e Thayliny|Concluída|
+|6|Projeto de persistência dos itens do backlog RF016, RF017|09/11/2024|22/11/2024|Thayliny|Concluída|
+|6|Implementação dos itens do backlog RF016, RF017*|09/11/2024|22/11/2024|Taniele e Stephany|Concluída|
+|7|Especificação de estórias de usuários dos Item(ns) do backlog RF018|23/11/2024|06/12/2024|Aline Nunes|Concluída|
+|7|Diagrama de classes dos Item(ns) do backlog RF018|23/11/2024|06/12/2024|Aline Nunes e Taniele|Concluída|
+|7|Diagrama de interação/sequencia dos itens do backlog RF018|23/11/2024|06/12/2024|Raquel|Concluída|
+|7|Projeto de Interfaces gráficas dos itens do backlog RF018|23/11/2024|06/12/2024|Aline Lima|Concluída|
+|7|Projeto de persistência dos itens do backlog RF018|23/11/2024|06/12/2024|Thayliny|Concluída|
+|7|Implementação dos itens do backlog RF018*|23/11/2024|05/12/2024|Aline Nunes e Stephany|Programada|
+|8|Apresentação do Projeto|06/12/2024|06/12/2024|Grupo|Programada|
 
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
