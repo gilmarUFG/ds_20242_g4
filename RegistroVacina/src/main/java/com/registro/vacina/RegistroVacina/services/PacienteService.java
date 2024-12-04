@@ -33,4 +33,10 @@ public class PacienteService {
             throw new EntityNotFoundException("Paciente com ID " + id + " não encontrado.");
         }
     }
+
+    public int buscarIdPorCpf(String cpf) {
+        return pacienteRepository.findByCpf(cpf)
+                .orElseThrow(() -> new IllegalArgumentException("O CPF informado não corresponde a nenhum paciente."))
+                .getId();
+    }
 }

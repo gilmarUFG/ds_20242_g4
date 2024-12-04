@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class HistoricoVacinacaoService {
@@ -26,6 +27,9 @@ public class HistoricoVacinacaoService {
 
     @Autowired
     private VacinaService vacinaService;
+
+    @Autowired
+    private PacienteService pacienteService;
 
     public List<HistoricoVacinacaoDTO> buscarHistoricoVacinacao(int pacienteId, String nomeVacina, String dataVacinacao) {
 
@@ -110,6 +114,29 @@ public class HistoricoVacinacaoService {
         }
     }
 
+    public List<HistoricoVacinacaoDTO> buscarHistoricoPorCpf(String cpf) {
+        int pacienteId = pacienteService.buscarIdPorCpf(cpf);
+        List<HistoricoVacinacao> historicos = historicoVacinacaoRepository.findByPacienteId(pacienteId);
+        return historicos.stream().map(this::converterParaDTO).collect(Collectors.toList());
+    }
+
+    private HistoricoVacinacaoDTO converterParaDTO(HistoricoVacinacao historico) {
+        HistoricoVacinacaoDTO dto = new HistoricoVacinacaoDTO();
+        dto.setDataVacinacao(historico.getDataVacinacao());
+        dto.setLoteVacinacao(historico.getLoteVacinacao());
+        dto.setAnoVencimneto(historico.getAnoVencimento());
+        dto.setQuantidadeDoses(String.valueOf(historico.getDose()));
+
+        // Buscar o nome da vacina usando o VacinaService
+        try {
+            Vacina vacina = vacinaService.buscarVacina(historico.getVacina());
+            dto.setNomeVacina(vacina.getNomeVacina());
+        } catch (Exception e) {
+            dto.setNomeVacina("Vacina desconhecida"); // Caso não encontre a vacina
+        }
+
+        return dto;
+    }
 }
 
 
