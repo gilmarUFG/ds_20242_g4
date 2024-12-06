@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import api from '../../utils/api';
+import axios from "axios";
+
 
 
 const LoginScreen = () => {
@@ -15,7 +16,7 @@ const LoginScreen = () => {
     setIsLoading(true);
     setError('');
     try {
-      const response = await api.post('/login', { cpf });
+      const response = await axios.post('http://localhost:8080/login', {cpf });
       if (response.status === 200) {
         await AsyncStorage.setItem('pacienteId', response.data.pacienteId.toString());
         router.push('/home');
@@ -34,12 +35,13 @@ const LoginScreen = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          //source={require('../assets/images/ic_vaccine.png')}
-          //style={styles.headerImage}
+          source={require('../../assets/images/ic_vaccine.png')}
+          style={styles.headerImage}
         />
         <Text style={styles.headerText}>Login</Text>
       </View>
-
+      
+      <View style={styles.buttonLogin}>
       <TextInput
         style={styles.input}
         placeholder="CPF"
@@ -57,6 +59,7 @@ const LoginScreen = () => {
           <Text style={styles.buttonText}>Entrar</Text>
         )}
       </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -65,8 +68,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    alignItems: 'center',
-    justifyContent: 'center',
     paddingTop: 20,
   },
   header: {
@@ -87,6 +88,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: '#fff',
+  },
+  buttonLogin: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   input: {
     height: 40,
