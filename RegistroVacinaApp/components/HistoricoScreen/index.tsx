@@ -23,26 +23,12 @@ const HistoricoScreen = () => {
     setError(null);
     try {
       const response = await api.get("/historico", {
-        params: { pacienteId },
+        params: { pacienteId, nomeVacina, dataVacinacao },
       });
-      setHistorico(response.data);
+      setHistorico(response.data); // Supondo que o retorno seja um array
     } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const buscarHistoricoComFiltros = async () => {
-    setIsLoading(true);
-    setError(null);
-    try {
-      const response = await api.get("/historico", {
-        params: { nomeVacina, dataVacinacao },
-      });
-      setHistorico(response.data);
-    } catch (err: any) {
-      setError(err.message);
+      setError("Erro ao buscar histórico. Verifique os parâmetros e tente novamente.");
+      console.error("Erro:", err);
     } finally {
       setIsLoading(false);
     }
@@ -64,32 +50,31 @@ const HistoricoScreen = () => {
         value={pacienteId}
         style={styles.input}
       />
-      <Button title="Buscar Histórico" onPress={buscarHistorico} />
-
-      <Text style={styles.filterText}>Filtrar por Nome e Data da Vacina</Text>
       <TextInput
-        placeholder="Nome da Vacina"
+        placeholder="Nome da Vacina (opcional)"
         onChangeText={setNomeVacina}
         value={nomeVacina}
         style={styles.input}
       />
       <TextInput
-        placeholder="Data de Vacinação (AAAA-MM-DD)"
+        placeholder="Data de Vacinação (AAAA-MM-DD, opcional)"
         onChangeText={setDataVacinacao}
         value={dataVacinacao}
         style={styles.input}
       />
-      <Button title="Buscar com Filtros" onPress={buscarHistoricoComFiltros} />
+      <Button title="Buscar Histórico" onPress={buscarHistorico} />
 
       {isLoading && <Text>Carregando...</Text>}
-      {!!error && <Text style={styles.errorText}>Erro: {error}</Text>}
+      {!!error && <Text style={styles.errorText}>{error}</Text>}
 
       <ScrollView style={styles.historyList}>
-        {historico.map((item: any) => (
-          <View key={item.id} style={styles.historyItem}>
-            <Text style={styles.vaccineName}>{item.vacina.nome}</Text>
-            <Text>Dose: {item.dose}</Text>
-            <Text>Data: {item.data}</Text>
+        {historico.map((item, index) => (
+          <View key={index} style={styles.historyItem}>
+            <Text style={styles.vaccineName}>Vacina: {item.nomeVacina}</Text>
+            <Text>Data da Vacinação: {item.dataVacinacao}</Text>
+            <Text>Lote: {item.loteVacinacao}</Text>
+            <Text>Ano de Vencimento: {item.anoVencimneto}</Text>
+            <Text>Quantidade de Doses: {item.quantidadeDoses}</Text>
           </View>
         ))}
       </ScrollView>
@@ -127,11 +112,6 @@ const styles = StyleSheet.create({
     padding: 10,
     marginVertical: 10,
     borderRadius: 8,
-  },
-  filterText: {
-    fontSize: 16,
-    marginVertical: 10,
-    fontWeight: "bold",
   },
   historyList: {
     marginTop: 20,
