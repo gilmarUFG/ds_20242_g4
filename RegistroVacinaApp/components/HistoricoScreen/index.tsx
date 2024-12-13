@@ -25,7 +25,7 @@ const HistoricoScreen = () => {
       const response = await api.get("/historico", {
         params: { pacienteId, nomeVacina, dataVacinacao },
       });
-      setHistorico(response.data); // Supondo que o retorno seja um array
+      setHistorico(response.data);
     } catch (err: any) {
       setError("Erro ao buscar histórico. Verifique os parâmetros e tente novamente.");
       console.error("Erro:", err);
@@ -50,18 +50,7 @@ const HistoricoScreen = () => {
         value={pacienteId}
         style={styles.input}
       />
-      <TextInput
-        placeholder="Nome da Vacina (opcional)"
-        onChangeText={setNomeVacina}
-        value={nomeVacina}
-        style={styles.input}
-      />
-      <TextInput
-        placeholder="Data de Vacinação (AAAA-MM-DD, opcional)"
-        onChangeText={setDataVacinacao}
-        value={dataVacinacao}
-        style={styles.input}
-      />
+      
       <Button title="Buscar Histórico" onPress={buscarHistorico} />
 
       {isLoading && <Text>Carregando...</Text>}
