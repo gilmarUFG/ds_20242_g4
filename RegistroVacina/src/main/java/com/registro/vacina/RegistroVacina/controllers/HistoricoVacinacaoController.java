@@ -20,8 +20,8 @@ public class HistoricoVacinacaoController {
 
 
     @GetMapping("/historico")
-    public List<HistoricoVacinacaoDTO> consultaHistoricoVacinacao(@RequestParam int pacienteId, @RequestParam(required = false) String nomeVacina, @RequestParam(required = false)  String dataVacinacao) {
-        return historicoVacinacaoService.buscarHistoricoVacinacao(pacienteId, nomeVacina, dataVacinacao);
+    public List<HistoricoVacinacaoDTO> consultaHistoricoVacinacao(@RequestParam int pacienteId) {
+        return historicoVacinacaoService.buscarHistoricoVacinacao(pacienteId);
 
     }
 }

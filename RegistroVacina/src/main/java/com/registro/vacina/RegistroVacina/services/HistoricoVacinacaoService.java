@@ -27,7 +27,7 @@ public class HistoricoVacinacaoService {
     @Autowired
     private VacinaService vacinaService;
 
-    public List<HistoricoVacinacaoDTO> buscarHistoricoVacinacao(int pacienteId, String nomeVacina, String dataVacinacao) {
+    public List<HistoricoVacinacaoDTO> buscarHistoricoVacinacao(int pacienteId) {
 
         List<HistoricoVacinacao> retorno = historicoVacinacaoRepository.findByPacienteId(pacienteId);
         List<HistoricoVacinacaoDTO> novoHistoricoVacinacao = new ArrayList<>(); // Criação de Lista
@@ -40,17 +40,7 @@ public class HistoricoVacinacaoService {
             Doses doses = doseService.buscarDosesId(h.getDose());
             Vacina vacina = vacinaService.buscarVacina(h.getVacina());
 
-            if(nomeVacina != null) {
-                if(!nomeVacina.equals(vacina.getNomeVacina())) {
-                    continue;
-                }
-            }
 
-            if(dataVacinacao != null) {
-                if(!Objects.equals(converterDataUSA(dataVacinacao), formatarData(h.getDataVacinacao()))) {
-                    continue;
-                }
-            }
 
 
             HistoricoVacinacaoDTO historicoVacinacaoDTO = new HistoricoVacinacaoDTO();
