@@ -8,11 +8,19 @@ const HomeScreen = () => {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
+              <View style={styles.headerLeft}>
                 <Image
                     source={require('../../assets/images/ic_vaccine.png')}
                     style={styles.headerImage}
                 />
                 <Text style={styles.headerText}>Vacinação</Text>
+              </View>
+                <TouchableOpacity style={styles.notificationButton} onPress={() => router.push('/notificacao')}>
+                    <Image
+                        source={require('../../assets/images/notification.png')}
+                        style={styles.notificationImage}
+                    />
+                </TouchableOpacity>
             </View>
             {/* Botões lado a lado */}
             <View style={styles.buttonRow}>
@@ -53,7 +61,12 @@ const styles = StyleSheet.create({
       paddingHorizontal: 10,
       flexDirection: "row",
       alignItems: "center",
+      justifyContent: "space-between", // Alinha os itens nas extremidades
       marginBottom: 20,
+    },
+    headerLeft:{
+        flexDirection: "row",
+        alignItems: "center",
     },
     headerImage: {
       width: 40,
@@ -64,6 +77,14 @@ const styles = StyleSheet.create({
       fontSize: 24,
       fontWeight: "bold",
       color: "#fff",
+    },
+    notificationButton: {
+      padding: 5,
+      borderRadius: 8,
+    },
+    notificationImage:{
+        width: 30,
+        height: 30,
     },
     buttonRow: {
       flexDirection: "row",
